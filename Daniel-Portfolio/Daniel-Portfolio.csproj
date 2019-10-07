@@ -83,6 +83,7 @@
     <Content Include="Images\blog-post-1.jpg" />
     <Content Include="Images\blog-post-2.jpg" />
     <Content Include="Images\blog-post-3.jpg" />
+    <Content Include="Images\favicon.png" />
     <Content Include="Images\home_bg.jpg" />
     <Content Include="Images\home_bg3.jpg" />
     <Content Include="Images\home_bg2.jpg" />

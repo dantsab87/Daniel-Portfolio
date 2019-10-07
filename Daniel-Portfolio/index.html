@@ -25,8 +25,7 @@
     <!-- Responsive css -->
     <link href="Content/responsive.css" rel="stylesheet" />
     <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon.png">
-
+    <link rel="shortcut icon" href="Images/favicon.png">
     <!--syntaxhighlighter css-->
     <link href="Scripts/SyntaxHighlighter/styles/shCore.css" rel="stylesheet" />
     <link href="Scripts/SyntaxHighlighter/styles/shThemeDefault.css" rel="stylesheet" />
@@ -89,7 +88,7 @@
         <div class="container">
             <div class="header-content">
                 <h1 id="HeaderName">Daniel Chang</h1>
-                <p id="subtitle">WEB DEVELOPER // STUDENT // ADVENTURER</p>
+                <p id="subtitle">WEB DEVELOPER</p>
 
                 <!--<ul class="list-unstyled list-social">
                     <li><a href="#"><i class="ion-social-facebook"></i></a></li>
@@ -875,17 +874,18 @@
     <script>
         $("#ftrclick").click(function () {
 
-          var inputvalue = $("#ftrinput").val();
-             x = 1;
-             for ( i=inputvalue ; i>0 ;  i-- )
-              {
-                 x *=  i ;
+            var inputvalue = $("#ftrinput").val();
+            x = 1;
+            for (i = inputvalue; i > 0; i--) {
+                x *= i;
 
-              }
+            }
 
-          $("#ftrresults").text("The factorial of " + inputvalue + " is:   " + x + ".");
-           
-        })
+            $("#ftrresults").text("The factorial of " + inputvalue + " is: " + x + ".");
+
+        });
+
+
 
         $(".clearbtn").click(function () {
             $("#ftrresults").empty();
