@@ -3051,7 +3051,7 @@ a.btn.disabled, fieldset:disabled a.btn {
 
 .btn-link {
     font-weight: 400;
-    color: #007bff;
+    color: #80bdff
     background-color: transparent
 }
 
@@ -3069,7 +3069,7 @@ a.btn.disabled, fieldset:disabled a.btn {
     }
 
     .btn-link.disabled, .btn-link:disabled {
-        color: #6c757d
+        color: #bbbfc4
     }
 
 .btn-group-lg > .btn, .btn-lg {

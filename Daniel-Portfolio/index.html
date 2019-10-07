@@ -38,23 +38,18 @@
     font-size: .60rem;
     letter-spacing: .2em;
     text-shadow: 1px 1px 3px black; 
+    opacity: 0.7;
     position: relative;
     top: -18px;
 }
-        #HeaderName {
-    opacity: 0.8;
+        .HeaderName {
+    opacity: 0.7;
     text-shadow: 1px 1px 3px black; 
 }
 
 
     </style>
 
-    <!-- =======================================================
-      Theme Name: Folio
-      Theme URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
-      Author: BootstrapMade.com
-      Author URL: https://bootstrapmade.com
-    ======================================================= -->
 </head>
 
 <body>
@@ -65,15 +60,15 @@
             <div class="container">
 
                 <!-- <div class="logo">
-         <a href="index.html"><img src="images/logo.png" alt="logo"></a>
-     </div>-->
+                    <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                </div>-->
 
                 <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
 
                 <ul class="nav-menu list-unstyled">
                     <li><a href="#header" class="smoothScroll">Home</a></li>
                     <li><a href="#about" class="smoothScroll">About</a></li>
-                    <li><a href="#portfolio" class="smoothScroll">Code Challenges</a></li>
+                    <li><a href="#portfolio" class="smoothScroll">Coding Challenges</a></li>
                     <li><a href="#journal" class="smoothScroll">Blog</a></li>
                     <li><a href="#contact" class="smoothScroll">Contact</a></li>
                 </ul>
@@ -87,7 +82,7 @@
 
         <div class="container">
             <div class="header-content">
-                <h1 id="HeaderName">Daniel Chang</h1>
+                <h1 class="HeaderName">Daniel Chang</h1>
                 <p id="subtitle">WEB DEVELOPER</p>
 
                 <!--<ul class="list-unstyled list-social">
@@ -110,7 +105,7 @@
                 <div class="col-lg-4 ">
                     <div class="div-img-bg">
                         <div class="about-img">
-                            <img src="images/me.jpg" class="img-responsive" alt="me">
+                            <img src="Images/me.jpg" class="img-responsive" alt="me">
                         </div>
                     </div>
                 </div>
@@ -118,7 +113,7 @@
                 <div class="col-lg-7">
                     <div class="about-descr">
 
-                        <p class="p-heading">About Me</p>
+                        <p class="p-heading h2">About Me</p>
                         <p class="separator">My name is Daniel...</p>
 
                     </div>
@@ -129,7 +124,7 @@
     </div>
     <!-- end section about us -->
     <!-- start section services -->
-    <div id="services">
+    <!--<div id="services">
         <div class="container">
 
             <div class="services-carousel owl-theme">
@@ -186,14 +181,15 @@
 
         </div>
 
-    </div>
+    </div>-->
     <!-- end section services -->
+
     <!-- start section portfolio -->
     <div id="portfolio" class="text-center paddsection">
 
         <div class="container">
             <div class="section-title text-center">
-                <h2>My Portfolio</h2>
+                <h2>Coding Challenges</h2>
             </div>
         </div>
 
@@ -349,7 +345,7 @@
 
                     <div class="portfolio-container">
                         <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits webdesign">
-                            <img src="Images/img1.jpg" data-toggle="modal" data-target="#myModal">
+                            <img src="Images/img1.jpg" data-toggle="modal" data-target="#myModal" alt="Bootstrap Grid">
                         </div>
 
 
@@ -359,7 +355,7 @@
                             <div class="modal-dialog modal-xl modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title">Coding Exercise - Input</h5>
+                                        <h5 class="modal-title">Coding Exercise - The sum of all numbers</h5>
                                         <button class="close" type="button" data-dismiss="modal">
                                             <span class="font-weight-light">&times;</span>
                                         </button>
@@ -436,7 +432,7 @@
                         <!--End of modal-->
 
                         <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits photography">
-                            <img src="Images/img2.jpg"" data-toggle="modal" data-target="#myModal2">
+                            <img src="Images/img2.jpg" " data-toggle="modal" data-target="#myModal2">
                         </div>
 
                         <!--Start of Modal3 img3 - The 5s-->
@@ -501,8 +497,8 @@
                         </div>
                         <!--End of modal-->
 
-                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding webdesig photographyn">
-                            <img src="Images/img3.jpg"" data-toggle="modal" data-target="#myModal3">
+                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding webdesig photographyn view overlay zoom">
+                            <img src="Images/img3.jpg" " data-toggle="modal" data-target="#myModal3" alt="The 5s">
                         </div>
 
 
@@ -550,7 +546,7 @@
 
 
                         <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups webdesign photography">
-                            <img src="Images/img4.jpg" data-toggle="modal" data-target="#myModal4">
+                            <img src="Images/img4.jpg" data-toggle="modal" data-target="#myModal4" alt="Factorial">
                         </div>
 
 
@@ -596,9 +592,14 @@
                         </div>
                         <!--End of modal-->
 
+
+
+
                         <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits photography">
-                            <img src="Images/img5.jpg" data-toggle="modal" data-target="#myModal5">
+                            <img src="Images/img5.jpg" data-toggle="modal" data-target="#myModal5" alt="Palindrome">
                         </div>
+
+
 
                         <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits webdesign">
                             <a class="popup-img" href="Images/6.jpg">
@@ -692,13 +693,13 @@
                     <div class="col-lg-6">
                         <div class="contact-contact">
 
-                            <h2 class="mb-30">GET IN TOUCH</h2>
+                            <h2 class="mb-30">CONTACT INFO:</h2>
 
                             <ul class="contact-details">
-                                <li><span>23 Main, Street</span></li>
-                                <li><span>New York, United States</span></li>
-                                <li><span>+88 01912704287</span></li>
-                                <li><span>example@example.com</span></li>
+                                <li><span>1234 Fake St</span></li>
+                                <li><span>Charlotte, North Carolina</span></li>
+                                <li><span>(704) 877-0741</span></li>
+                                <li><span>dantsab87@gmail.com</span></li>
                             </ul>
 
                         </div>
@@ -757,12 +758,10 @@
             <div class="socials-media text-center">
 
                 <ul class="list-unstyled">
-                    <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                    <li><a href="#"><i class="ion-social-instagram"></i></a></li>
-                    <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
                     <li><a href="#"><i class="ion-social-tumblr"></i></a></li>
-                    <li><a href="#"><i class="ion-social-dribbble"></i></a></li>
+                    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                    <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+
                 </ul>
 
             </div>
@@ -776,7 +775,7 @@
                   Licensing information: https://bootstrapmade.com/license/
                   Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio
                 -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>. Modified by Daniel Chang
             </div>
 
         </div>
@@ -804,7 +803,7 @@
         SyntaxHighlighter.all()
     </script>
 
-    <!--script for Input adding-->
+    <!--script for Input sum-->
     <script>
         $("#btnclick").click(function () {
             var num1 = Number($("#input1").val());
@@ -896,17 +895,9 @@
 
     <!--Script for Palindrome-->
     <script>
-        $("#palclick").click(function () {
-
-
+        $(#palindrome).click() {
 
         }
-
-        $(".clearbtn").click(function () {
-            $("#palresults").empty();
-            $("#palinput").val("");
-
-        })
     </script>
 
 </body>
