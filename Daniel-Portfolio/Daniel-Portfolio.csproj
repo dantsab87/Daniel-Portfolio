@@ -74,11 +74,6 @@
     <Content Include="Content\owl.carousel.min.css" />
     <Content Include="Content\responsive.css" />
     <Content Include="Content\style.css" />
-    <Content Include="Images\1.jpg" />
-    <Content Include="Images\2.jpg" />
-    <Content Include="Images\3.jpg" />
-    <Content Include="Images\4.jpg" />
-    <Content Include="Images\5.jpg" />
     <Content Include="Images\6.jpg" />
     <Content Include="Images\blog-post-1.jpg" />
     <Content Include="Images\blog-post-2.jpg" />
@@ -87,6 +82,11 @@
     <Content Include="Images\home_bg.jpg" />
     <Content Include="Images\home_bg3.jpg" />
     <Content Include="Images\home_bg2.jpg" />
+    <Content Include="Images\img1.jpg" />
+    <Content Include="Images\img2.jpg" />
+    <Content Include="Images\img3.jpg" />
+    <Content Include="Images\img4.jpg" />
+    <Content Include="Images\img5.jpg" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\me.jpg" />
     <Content Include="index.html" />
