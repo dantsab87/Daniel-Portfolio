@@ -30,6 +30,9 @@
     <link href="Scripts/SyntaxHighlighter/styles/shCore.css" rel="stylesheet" />
     <link href="Scripts/SyntaxHighlighter/styles/shThemeDefault.css" rel="stylesheet" />
 
+    <!--<link href="Content/component.css" rel="stylesheet" />
+    <link href="Content/default.css" rel="stylesheet" />-->
+
     <!--my css code-->
     <style>
         p#subtitle {
@@ -42,10 +45,30 @@
     position: relative;
     top: -18px;
 }
-        .HeaderName {
+        #HName {
     opacity: 0.7;
     text-shadow: 1px 1px 3px black; 
+
+
 }
+
+    .shad {
+    color:#FFFFFF;
+    opacity: 0.7;
+    text-shadow: 1px 1px 3px black; 
+    }
+
+    .padN{
+    padding-top: 3px;
+    padding-right: 20px;
+    padding-bottom: 3px;
+    padding-left: 0px;
+    }
+
+    .pimg {
+    cursor: pointer;
+
+    }
 
 
     </style>
@@ -66,11 +89,11 @@
                 <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
 
                 <ul class="nav-menu list-unstyled">
-                    <li><a href="#header" class="smoothScroll">Home</a></li>
-                    <li><a href="#about" class="smoothScroll">About</a></li>
-                    <li><a href="#portfolio" class="smoothScroll">Coding Challenges</a></li>
-                    <li><a href="#journal" class="smoothScroll">Blog</a></li>
-                    <li><a href="#contact" class="smoothScroll">Contact</a></li>
+                    <li><a href="#header" class="smoothScroll shad">Home</a></li>
+                    <li><a href="#about" class="smoothScroll shad">About</a></li>
+                    <li><a href="#portfolio" class="smoothScroll shad">Coding Challenges</a></li>
+                    <li><a href="#journal" class="smoothScroll shad">Blog</a></li>
+                    <li><a href="#contact" class="smoothScroll shad">Contact</a></li>
                 </ul>
 
             </div>
@@ -82,8 +105,8 @@
 
         <div class="container">
             <div class="header-content">
-                <h1 class="HeaderName">Daniel Chang</h1>
-                <p id="subtitle">WEB DEVELOPER</p>
+                <h1 id="HName">Daniel Chang</h1>
+                <p id="subtitle">WEB DEVELOPER // BIOLOGIST // OUTDOORSMAN</p>
 
                 <!--<ul class="list-unstyled list-social">
                     <li><a href="#"><i class="ion-social-facebook"></i></a></li>
@@ -113,8 +136,9 @@
                 <div class="col-lg-7">
                     <div class="about-descr">
 
-                        <p class="p-heading h2">About Me</p>
-                        <p class="separator">My name is Daniel...</p>
+                        <h2>About Me</h2>
+                        <p class="separator">Hello my name is Daniel Chang, I graduated at the University of North Carolina at Charlotte 
+                        with a BS in Biology and a BA in Art. I am currently attending CoderFoundry to further pursue my knowledge in web development!</p>
 
                     </div>
 
@@ -214,7 +238,7 @@
                         <div class="modal-dialog modal-xl modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title">Coding Exercise - Bootstrap Grid</h5>
+                                    <h2 class="modal-title">Coding Exercise - Bootstrap Grid</h2>
                                     <button class="close" type="button" data-dismiss="modal">
                                         <span class="font-weight-light" aria-hidden="true">&times;</span>
                                     </button>
@@ -226,58 +250,58 @@
                                         <div class="row">
                                             <div class="col">
                                                 <div class="row h2">
-                                                    <div class="col-md-4" style="background-color:lavender;">4</div>
-                                                    <div class="col-md-4" style="background-color:lavender;">4</div>
-                                                    <div class="col-md-4" style="background-color:lavender;">4</div>
+                                                    <div class="col-md-4">4</div>
+                                                    <div class="col-md-4">4</div>
+                                                    <div class="col-md-4">4</div>
                                                 </div>
                                                 <div class="row h2">
-                                                    <div class="col-md-6" style="background-color:mediumpurple;">6</div>
-                                                    <div class="col-md-6" style="background-color:mediumpurple;">6</div>
+                                                    <div class="col-md-6">6</div>
+                                                    <div class="col-md-6">6</div>
                                                 </div>
                                                 <div class="row h2">
-                                                    <div class="col-md-12" style="background-color:lightpink;">12</div>
+                                                    <div class="col-md-12">12</div>
                                                 </div>
                                             </div>
 
                                             <div class="col">
                                                 <div class="row h4">
-                                                    <div class="col-md-3" style="background-color:lightseagreen;">3</div>
-                                                    <div class="col-md-3" style="background-color:lightseagreen;">3</div>
-                                                    <div class="col-md-3" style="background-color:lightseagreen;">3</div>
-                                                    <div class="col-md-3" style="background-color:lightseagreen;">3</div>
+                                                    <div class="col-md-3">3</div>
+                                                    <div class="col-md-3">3</div>
+                                                    <div class="col-md-3">3</div>
+                                                    <div class="col-md-3">3</div>
                                                 </div>
                                             </div>
 
                                             <div class="col">
                                                 <div class="row h5">
-                                                    <div class="col-sm-8" style="background-color:lightskyblue;">8</div>
-                                                    <div class="col-sm-4" style="background-color:lightsalmon;">4</div>
+                                                    <div class="col-sm-8">8</div>
+                                                    <div class="col-sm-4">4</div>
                                                 </div>
                                                 <div class="row h5">
-                                                    <div class="col-sm-6" style="background-color:mediumpurple;">6</div>
-                                                    <div class="col-sm-3" style="background-color:lightseagreen;">3</div>
-                                                    <div class="col-sm-3" style="background-color:lightseagreen;">3</div>
+                                                    <div class="col-sm-6">6</div>
+                                                    <div class="col-sm-3">3</div>
+                                                    <div class="col-sm-3">3</div>
                                                 </div>
                                                 <div class="row h5">
-                                                    <div class="col-sm-2" style="background-color:lightsteelblue;">2</div>
-                                                    <div class="col-sm-3" style="background-color:lightseagreen;">3</div>
-                                                    <div class="col-sm-2" style="background-color:lightsteelblue;">2</div>
-                                                    <div class="col-sm-3" style="background-color:lightseagreen;">3</div>
-                                                    <div class="col-sm-2" style="background-color:lightsteelblue;">2</div>
+                                                    <div class="col-sm-2">2</div>
+                                                    <div class="col-sm-3">3</div>
+                                                    <div class="col-sm-2">2</div>
+                                                    <div class="col-sm-3">3</div>
+                                                    <div class="col-sm-2">2</div>
                                                 </div>
                                                 <div class="row h5">
-                                                    <div class="col-sm-1" style="background-color:lightcyan;">1</div>
-                                                    <div class="col-sm-1" style="background-color:lightcyan;">1</div>
-                                                    <div class="col-sm-1" style="background-color:lightcyan;">1</div>
-                                                    <div class="col-sm-1" style="background-color:lightcyan;">1</div>
-                                                    <div class="col-sm-1" style="background-color:lightcyan;">1</div>
-                                                    <div class="col-sm-1" style="background-color:lightcyan;">1</div>
-                                                    <div class="col-sm-1" style="background-color:lightcyan;">1</div>
-                                                    <div class="col-sm-1" style="background-color:lightcyan;">1</div>
-                                                    <div class="col-sm-1" style="background-color:lightcyan;">1</div>
-                                                    <div class="col-sm-1" style="background-color:lightcyan;">1</div>
-                                                    <div class="col-sm-1" style="background-color:lightcyan;">1</div>
-                                                    <div class="col-sm-1" style="background-color:lightcyan;">1</div>
+                                                    <div class="col-sm-1">1</div>
+                                                    <div class="col-sm-1">1</div>
+                                                    <div class="col-sm-1">1</div>
+                                                    <div class="col-sm-1">1</div>
+                                                    <div class="col-sm-1">1</div>
+                                                    <div class="col-sm-1">1</div>
+                                                    <div class="col-sm-1">1</div>
+                                                    <div class="col-sm-1">1</div>
+                                                    <div class="col-sm-1">1</div>
+                                                    <div class="col-sm-1">1</div>
+                                                    <div class="col-sm-1">1</div>
+                                                    <div class="col-sm-1">1</div>
                                                 </div>
                                             </div>
 
@@ -337,7 +361,7 @@
 
 
                                 </div>
-                                <div class="modal-footer"><button class="btn btn-secondary btn-sm" type="button" data-dismiss="modal">Close</button></div>
+                                <div class="modal-footer"><button class="btn btn-primary btn-sm" type="button" data-dismiss="modal">Close</button></div>
                             </div>
                         </div>
                     </div>
@@ -345,7 +369,10 @@
 
                     <div class="portfolio-container">
                         <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits webdesign">
-                            <img src="Images/img1.jpg" data-toggle="modal" data-target="#myModal" alt="Bootstrap Grid">
+                            <img src="Images/img1.jpg" data-toggle="modal" data-target="#myModal" alt="Bootstrap Grid" class="img-responsive pimg">
+                            <div class="carousel-caption">
+                                <h2 data-toggle="modal" data-target="#myModal">Bootstrap Grid</h2>
+                            </div>
                         </div>
 
 
@@ -355,7 +382,7 @@
                             <div class="modal-dialog modal-xl modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title">Coding Exercise - The sum of all numbers</h5>
+                                        <h2 class="modal-title">Coding Exercise - The Sum</h2>
                                         <button class="close" type="button" data-dismiss="modal">
                                             <span class="font-weight-light">&times;</span>
                                         </button>
@@ -366,19 +393,19 @@
                                             <div class="col-xl">
                                                 <div class="row">
                                                     <div class="col">
-                                                        <div class="row">
+                                                        <div class="row padN">
                                                             <input type="text" id="input1">
                                                         </div>
-                                                        <div class="row">
+                                                        <div class="row padN">
                                                             <input type="text" id="input2">
                                                         </div>
-                                                        <div class="row">
+                                                        <div class="row padN">
                                                             <input type="text" id="input3">
                                                         </div>
-                                                        <div class="row">
+                                                        <div class="row padN">
                                                             <input type="text" id="input4">
                                                         </div>
-                                                        <div class="row">
+                                                        <div class="row padN">
                                                             <input type="text" id="input5">
                                                         </div>
                                                     </div>
@@ -389,33 +416,53 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="row">
+                                                <div class="row padN">
                                                     <button class="btn btn-primary btn-sm" id="btnclick">Submit</button>
                                                     <button class="btn btn-secondary btn-sm clearbtn">Clear</button>
                                                 </div>
                                                 <div class="row-xl">
                                                     <pre class="brush: js">
-        $("#btnclick").click(function () {
-            var num1 = Number($("#input1").val());
-            var num2 = Number($("#input2").val());
-            var num3 = Number($("#input3").val());
-            var num4 = Number($("#input4").val());
-            var num5 = Number($("#input5").val());
+        $("#5btnclick").click(function () {
+            var num1 = Number($("#5input1").val());
+            var num2 = Number($("#5input2").val());
+            var num3 = Number($("#5input3").val());
+            var num4 = Number($("#5input4").val());
+            var num5 = Number($("#5input5").val());
 
-            var sum = num1 + num2 + num3 + num4 + num5
-            var output = "The sum of your numbers: " + sum + ".";
-            $("#results").text(output);
-            
+
+            var least = Math.min(num1, num2, num3, num4, num5);
+            var greatest = Math.max(num1, num2, num3, num4, num5);
+            var sum = num1 + num2 + num3 + num4 + num5;
+            var mean = (num1 + num2 + num3 + num4 + num5) / 2;
+            var multi = num1 * num2 * num3 * num4 * num5;
+
+
+            $("#1results").text(least + " is the lowest number.");
+            $("#2results").text(greatest + " is the greatest number.");
+            $("#3results").text(mean + " is mean of the numbers.");
+            $("#4results").text(sum + " is the sum of all the numbers.");
+            $("#5results").text(multi + " is the product of all the numbers.");
+
         })
 
         $(".clearbtn").click(function () {
-            $("#results").empty();
-            $("#input1").val("");
-            $("#input2").val("");
-            $("#input3").val("");
-            $("#input4").val("");
-            $("#input5").val("");
+            $("#1results").empty();
+            $("#2results").empty();
+            $("#3results").empty();
+            $("#4results").empty();
+            $("#5results").empty();
+            $("#5input1").val("");
+            $("#5input2").val("");
+            $("#5input3").val("");
+            $("#5input4").val("");
+            $("#5input5").val("");
         })
+
+         $("#5input1, #5input2, #5input3, #5input4, #5input5").keypress(function (e) {
+            if (!(e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 96 && e.keyCode <= 105)) {
+                return false;
+            }
+        });
                                                     </pre>
                                                 </div>
                                             </div>
@@ -425,14 +472,17 @@
 
 
                                     </div>
-                                    <div class="modal-footer"><button class="btn btn-secondary btn-sm clearbtn" type="button" data-dismiss="modal">Close</button></div>
+                                    <div class="modal-footer"><button class="btn btn-primary btn-sm clearbtn" type="button" data-dismiss="modal">Close</button></div>
                                 </div>
                             </div>
                         </div>
                         <!--End of modal-->
 
                         <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits photography">
-                            <img src="Images/img2.jpg" " data-toggle="modal" data-target="#myModal2">
+                            <img src="Images/img2.jpg" data-toggle="modal" data-target="#myModal2" class="img-responsive pimg">
+                            <div class="carousel-caption">
+                                <h2 data-toggle="modal" data-target="#myModal2">The Sum</h2>
+                            </div>
                         </div>
 
                         <!--Start of Modal3 img3 - The 5s-->
@@ -440,7 +490,7 @@
                             <div class="modal-dialog modal-xl modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title">Coding Exercise - the 5s</h5>
+                                        <h2 class="modal-title">Coding Exercise - the 5s</h2>
                                         <button class="close" type="button" data-dismiss="modal">
                                             <span class="font-weight-light">&times;</span>
                                         </button>
@@ -452,37 +502,37 @@
                                                 <div class="row">
                                                     <div class="col">
                                                         <div class="row">Input Numbers below:</div>
-                                                        <div class="row">
+                                                        <div class="row padN">
                                                             <input type="text" id="5input1">
                                                         </div>
-                                                        <div class="row">
+                                                        <div class="row padN">
                                                             <input type="text" id="5input2">
                                                         </div>
-                                                        <div class="row">
+                                                        <div class="row padN">
                                                             <input type="text" id="5input3">
                                                         </div>
-                                                        <div class="row">
+                                                        <div class="row padN">
                                                             <input type="text" id="5input4">
                                                         </div>
-                                                        <div class="row">
+                                                        <div class="row padN">
                                                             <input type="text" id="5input5">
                                                         </div>
                                                     </div>
                                                     <div class="col">
                                                         <div class="row">Your Results</div>
-                                                        <div class="row" id="1results">
+                                                        <div class="row padN" id="1results">
                                                         </div>
-                                                        <div class="row" id="2results">
+                                                        <div class="row padN" id="2results">
                                                         </div>
-                                                        <div class="row" id="3results">
+                                                        <div class="row padN" id="3results">
                                                         </div>
-                                                        <div class="row" id="4results">
+                                                        <div class="row padN" id="4results">
                                                         </div>
-                                                        <div class="row" id="5results">
+                                                        <div class="row padN" id="5results">
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="row">
+                                                <div class="row padN">
                                                     <button class="btn btn-primary btn-sm" id="5btnclick">Submit</button>
                                                     <button class="btn btn-secondary btn-sm clearbtn">Clear</button>
                                                 </div>
@@ -491,14 +541,17 @@
 
 
                                     </div>
-                                    <div class="modal-footer"><button class="btn btn-secondary btn-sm clearbtn" type="button" data-dismiss="modal">Close</button></div>
+                                    <div class="modal-footer"><button class="btn btn-primary btn-sm clearbtn" type="button" data-dismiss="modal">Close</button></div>
                                 </div>
                             </div>
                         </div>
                         <!--End of modal-->
 
                         <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding webdesig photographyn view overlay zoom">
-                            <img src="Images/img3.jpg" " data-toggle="modal" data-target="#myModal3" alt="The 5s">
+                            <img src="Images/img3.jpg" data-toggle="modal" data-target="#myModal3" alt="The 5s" class="img-responsive pimg">
+                            <div class="carousel-caption">
+                                <h2 data-toggle="modal" data-target="#myModal3">5 Numbers</h2>
+                            </div>
                         </div>
 
 
@@ -507,7 +560,7 @@
                             <div class="modal-dialog modal-xl modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title">Coding Exercise - Factorial</h5>
+                                        <h2 class="modal-title">Coding Exercise - Factorial</h2>
                                         <button class="close" type="button" data-dismiss="modal">
                                             <span class="font-weight-light">&times;</span>
                                         </button>
@@ -518,7 +571,7 @@
                                                 <div class="row">
                                                     <div class="col">
                                                         <div class="row">Input a Number below:</div>
-                                                        <div class="row">
+                                                        <div class="row padN">
                                                             <input type="text" id="ftrinput">
                                                         </div>
                                                     </div>
@@ -528,7 +581,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="row">
+                                                <div class="row padN">
                                                     <button class="btn btn-primary btn-sm" id="ftrclick">Submit</button>
                                                     <button class="btn btn-secondary btn-sm clearbtn">Clear</button>
                                                 </div>
@@ -537,7 +590,7 @@
 
 
                                     </div>
-                                    <div class="modal-footer"><button class="btn btn-secondary btn-sm clearbtn" type="button" data-dismiss="modal">Close</button></div>
+                                    <div class="modal-footer"><button class="btn btn-primary btn-sm clearbtn" type="button" data-dismiss="modal">Close</button></div>
                                 </div>
                             </div>
                         </div>
@@ -546,7 +599,10 @@
 
 
                         <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups webdesign photography">
-                            <img src="Images/img4.jpg" data-toggle="modal" data-target="#myModal4" alt="Factorial">
+                            <img src="Images/img4.jpg" data-toggle="modal" data-target="#myModal4" alt="Factorial" class="img-responsive pimg">
+                            <div class="carousel-caption">
+                                <h2 data-toggle="modal" data-target="#myModal4">Factorial</h2>
+                            </div>
                         </div>
 
 
@@ -556,7 +612,7 @@
                             <div class="modal-dialog modal-xl modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title">Coding Exercise - Palindrome</h5>
+                                        <h2 class="modal-title">Coding Exercise - Palindrome</h2>
                                         <button class="close" type="button" data-dismiss="modal">
                                             <span class="font-weight-light">&times;</span>
                                         </button>
@@ -567,7 +623,7 @@
                                                 <div class="row">
                                                     <div class="col">
                                                         <div class="row">Input a word below:</div>
-                                                        <div class="row">
+                                                        <div class="row padN">
                                                             <input type="text" id="palinput">
                                                         </div>
                                                     </div>
@@ -577,7 +633,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="row">
+                                                <div class="row padN">
                                                     <button class="btn btn-primary btn-sm" id="palclick">Submit</button>
                                                     <button class="btn btn-secondary btn-sm clearbtn">Clear</button>
                                                 </div>
@@ -586,7 +642,7 @@
 
 
                                     </div>
-                                    <div class="modal-footer"><button class="btn btn-secondary btn-sm clearbtn" type="button" data-dismiss="modal">Close</button></div>
+                                    <div class="modal-footer"><button class="btn btn-primary btn-sm clearbtn" type="button" data-dismiss="modal">Close</button></div>
                                 </div>
                             </div>
                         </div>
@@ -596,16 +652,75 @@
 
 
                         <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits photography">
-                            <img src="Images/img5.jpg" data-toggle="modal" data-target="#myModal5" alt="Palindrome">
+                            <img src="Images/img5.jpg" data-toggle="modal" data-target="#myModal5" alt="Palindrome" class="img-responsive pimg">
+                            <div class="carousel-caption">
+                                <h2 data-toggle="modal" data-target="#myModal5">Palindrome</h2>
+                            </div>
                         </div>
 
 
+                        <!--<div class="portfolio-container">
+                            <div class="row">
+                                <ul class="grid cs-style-4">
+                                    <li>
+                                        <figure>
+                                            <div><img src="Images/img1.jpg" alt=""></div>
+                                            <figcaption>
+                                                <h2>Bootstrap Grid</h2>
+                                                <a href="#myModal" data-toggle="modal" data-target="#myModal">Take a look</a>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <div><img src="Images/img2.jpg" alt="" data-toggle="modal" data-target="#myModal2"></div>
+                                            <figcaption>
+                                                <h2>Bootstrap Grid</h2>
+                                                <a href="#myModal3" data-toggle="modal" data-target="#myModal3">Take a look</a>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <div><img src="Images/img3.jpg" alt="" data-toggle="modal" data-target="#myModal3"></div>
+                                            <figcaption>
+                                                <h2>Bootstrap Grid</h2>
+                                                <a href="#myModal3" data-toggle="modal" data-target="#myModal3">Take a look</a>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <div><img src="Images/img4.jpg" alt="" data-toggle="modal" data-target="#myModal4"></div>
+                                            <figcaption>
+                                                <h2>Bootstrap Grid</h2>
+                                                <a href="#myModal4" data-toggle="modal" data-target="#myModal4">Take a look</a>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <div><img src="Images/img5.jpg" alt="" data-toggle="modal" data-target="#myModal5"></div>
+                                            <figcaption>
+                                                <h2>Bootstrap Grid</h2>
+                                                <a href="#myModal5" data-toggle="modal" data-target="#myModal5">Take a look</a>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <div><img src="Images/6.jpg" alt="" data-toggle="modal" data-target="#myModal6"></div>
+                                            <figcaption>
+                                                <h2>Bootstrap Grid</h2>
+                                                <a href="#myModal6" data-toggle="modal" data-target="#myModal6">Take a look</a>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
 
-                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits webdesign">
-                            <a class="popup-img" href="Images/6.jpg">
-                                <img src="Images/6.jpg" alt="img">
-                            </a>
-                        </div>
+                                </ul>
+                            </div>
+                        </div>-->
+
 
                     </div>
                 </div>
@@ -651,7 +766,7 @@
 
                             <div class="journal-txt">
 
-                                <h4><a href="#blog-single.html">WE'RE GONA MAKE DREAMS COMES</a></h4>
+                                <h4><a href="#blog-single.html">WE'RE GONNA MAKE DREAMS COMES</a></h4>
                                 <p class="separator">
                                     To an English person, it will seem like simplified English
                                 </p>
@@ -741,7 +856,7 @@
                                 </div>
 
                                 <div class="col-lg-12">
-                                    <input type="submit" class="btn btn-defeault btn-send" value="Send message">
+                                    <input type="submit" class="btn btn-primary btn-send" value="Send message">
                                 </div>
 
                             </div>
@@ -789,6 +904,9 @@
     <script src="Scripts/owl.carousel.min.js"></script>
     <script src="Scripts/magnific-popup.min.js"></script>
     <script src="Scripts/isotope.pkgd.min.js"></script>
+    <!--<script src="Scripts/modernizr.custom.js"></script>
+    <script src="Scripts/toucheffects.js"></script>-->
+
 
     <!-- Contact Form JavaScript File -->
     <!--<script src="contactform/contactform.js"></script>-->
@@ -826,6 +944,13 @@
             $("#input4").val("");
             $("#input5").val("");
         })
+
+
+        $("#input1, #input2, #input3, #input4, #input5").keypress(function (e) {
+            if (!(e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 96 && e.keyCode <= 105)) {
+                return false;
+            }
+        });
     </script>
 
 
@@ -866,6 +991,12 @@
             $("#5input4").val("");
             $("#5input5").val("");
         })
+
+         $("#5input1, #5input2, #5input3, #5input4, #5input5").keypress(function (e) {
+            if (!(e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 96 && e.keyCode <= 105)) {
+                return false;
+            }
+        });
     </script>
 
 
@@ -891,14 +1022,16 @@
             $("#ftrinput").val("");
 
         })
+
+                $("#ftrinput").keypress(function (e) {
+            if (!(e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 96 && e.keyCode <= 105)) {
+                return false;
+            }
+        });
     </script>
 
     <!--Script for Palindrome-->
-    <script>
-        $(#palindrome).click() {
-
-        }
-    </script>
+   
 
 </body>
 
