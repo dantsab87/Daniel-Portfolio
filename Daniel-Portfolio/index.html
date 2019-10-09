@@ -67,7 +67,6 @@
 
     .pimg {
     cursor: pointer;
-
     }
 
 
@@ -137,7 +136,7 @@
                     <div class="about-descr">
 
                         <h2>About Me</h2>
-                        <p class="separator">Hello my name is Daniel Chang, I graduated at the University of North Carolina at Charlotte 
+                        <p class="separator">Hello my name is Daniel Chang. I graduated at the University of North Carolina at Charlotte 
                         with a BS in Biology and a BA in Art. I am currently attending CoderFoundry to further pursue my knowledge in web development!</p>
 
                     </div>
@@ -371,15 +370,15 @@
                         <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits webdesign">
                             <img src="Images/img1.jpg" data-toggle="modal" data-target="#myModal" alt="Bootstrap Grid" class="img-responsive pimg">
                             <div class="carousel-caption">
-                                <h2 data-toggle="modal" data-target="#myModal">Bootstrap Grid</h2>
+                                <h3 data-toggle="modal" data-target="#myModal">Bootstrap Grid</h3>
                             </div>
                         </div>
 
 
 
-                        <!--Start of Modal2 img2 - Input-->
+                        <!--Start of Modal2 img2 - Input sum-->
                         <div class="modal fade" id="myModal2">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h2 class="modal-title">Coding Exercise - The Sum</h2>
@@ -390,7 +389,7 @@
                                     <div class="modal-body">
 
                                         <div class="container">
-                                            <div class="col-xl">
+                                            <div class="col-lg">
                                                 <div class="row">
                                                     <div class="col">
                                                         <div class="row padN">
@@ -420,45 +419,32 @@
                                                     <button class="btn btn-primary btn-sm" id="btnclick">Submit</button>
                                                     <button class="btn btn-secondary btn-sm clearbtn">Clear</button>
                                                 </div>
-                                                <div class="row-xl">
+                                                <div class="row-lg">
                                                     <pre class="brush: js">
-        $("#5btnclick").click(function () {
-            var num1 = Number($("#5input1").val());
-            var num2 = Number($("#5input2").val());
-            var num3 = Number($("#5input3").val());
-            var num4 = Number($("#5input4").val());
-            var num5 = Number($("#5input5").val());
+        $("#btnclick").click(function () {
+            var num1 = Number($("#input1").val());
+            var num2 = Number($("#input2").val());
+            var num3 = Number($("#input3").val());
+            var num4 = Number($("#input4").val());
+            var num5 = Number($("#input5").val());
 
-
-            var least = Math.min(num1, num2, num3, num4, num5);
-            var greatest = Math.max(num1, num2, num3, num4, num5);
-            var sum = num1 + num2 + num3 + num4 + num5;
-            var mean = (num1 + num2 + num3 + num4 + num5) / 2;
-            var multi = num1 * num2 * num3 * num4 * num5;
-
-
-            $("#1results").text(least + " is the lowest number.");
-            $("#2results").text(greatest + " is the greatest number.");
-            $("#3results").text(mean + " is mean of the numbers.");
-            $("#4results").text(sum + " is the sum of all the numbers.");
-            $("#5results").text(multi + " is the product of all the numbers.");
+            var sum = num1 + num2 + num3 + num4 + num5
+            var output = "The sum of your numbers: " + sum + ".";
+            $("#results").text(output);
 
         })
 
         $(".clearbtn").click(function () {
-            $("#1results").empty();
-            $("#2results").empty();
-            $("#3results").empty();
-            $("#4results").empty();
-            $("#5results").empty();
-            $("#5input1").val("");
-            $("#5input2").val("");
-            $("#5input3").val("");
-            $("#5input4").val("");
-            $("#5input5").val("");
+            $("#results").empty();
+            $("#input1").val("");
+            $("#input2").val("");
+            $("#input3").val("");
+            $("#input4").val("");
+            $("#input5").val("");
         })
 
-         $("#5input1, #5input2, #5input3, #5input4, #5input5").keypress(function (e) {
+
+        $("#input1, #input2, #input3, #input4, #input5").keypress(function (e) {
             if (!(e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 96 && e.keyCode <= 105)) {
                 return false;
             }
@@ -481,13 +467,13 @@
                         <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits photography">
                             <img src="Images/img2.jpg" data-toggle="modal" data-target="#myModal2" class="img-responsive pimg">
                             <div class="carousel-caption">
-                                <h2 data-toggle="modal" data-target="#myModal2">The Sum</h2>
+                                <h3 data-toggle="modal" data-target="#myModal2">The Sum</h3>
                             </div>
                         </div>
 
                         <!--Start of Modal3 img3 - The 5s-->
                         <div class="modal fade" id="myModal3">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h2 class="modal-title">Coding Exercise - the 5s</h2>
@@ -498,7 +484,7 @@
                                     <div class="modal-body">
 
                                         <div class="container">
-                                            <div class="col-xl">
+                                            <div class="col-lg">
                                                 <div class="row">
                                                     <div class="col">
                                                         <div class="row">Input Numbers below:</div>
@@ -550,14 +536,14 @@
                         <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding webdesig photographyn view overlay zoom">
                             <img src="Images/img3.jpg" data-toggle="modal" data-target="#myModal3" alt="The 5s" class="img-responsive pimg">
                             <div class="carousel-caption">
-                                <h2 data-toggle="modal" data-target="#myModal3">5 Numbers</h2>
+                                <h3 data-toggle="modal" data-target="#myModal3">5 Numbers</h3>
                             </div>
                         </div>
 
 
                         <!--Start of Modal4 img4 - Factorial-->
                         <div class="modal fade" id="myModal4">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h2 class="modal-title">Coding Exercise - Factorial</h2>
@@ -567,7 +553,7 @@
                                     </div>
                                     <div class="modal-body">
                                         <div class="container">
-                                            <div class="col-xl">
+                                            <div class="col-lg">
                                                 <div class="row">
                                                     <div class="col">
                                                         <div class="row">Input a Number below:</div>
@@ -601,7 +587,7 @@
                         <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups webdesign photography">
                             <img src="Images/img4.jpg" data-toggle="modal" data-target="#myModal4" alt="Factorial" class="img-responsive pimg">
                             <div class="carousel-caption">
-                                <h2 data-toggle="modal" data-target="#myModal4">Factorial</h2>
+                                <h3 data-toggle="modal" data-target="#myModal4">Factorial</h3>
                             </div>
                         </div>
 
@@ -609,7 +595,7 @@
 
                         <!--Start of Modal5 img5 - Palindrome-->
                         <div class="modal fade" id="myModal5">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h2 class="modal-title">Coding Exercise - Palindrome</h2>
@@ -619,7 +605,7 @@
                                     </div>
                                     <div class="modal-body">
                                         <div class="container">
-                                            <div class="col-xl">
+                                            <div class="col-lg">
                                                 <div class="row">
                                                     <div class="col">
                                                         <div class="row">Input a word below:</div>
@@ -654,7 +640,7 @@
                         <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits photography">
                             <img src="Images/img5.jpg" data-toggle="modal" data-target="#myModal5" alt="Palindrome" class="img-responsive pimg">
                             <div class="carousel-caption">
-                                <h2 data-toggle="modal" data-target="#myModal5">Palindrome</h2>
+                                <h3 data-toggle="modal" data-target="#myModal5">Palindrome</h3>
                             </div>
                         </div>
 
