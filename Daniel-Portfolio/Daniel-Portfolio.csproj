@@ -77,9 +77,10 @@
     <Content Include="Content\responsive.css" />
     <Content Include="Content\style.css" />
     <Content Include="Images\6.jpg" />
-    <Content Include="Images\blog-post-1.jpg" />
+    <Content Include="Images\about.jpg" />
     <Content Include="Images\blog-post-2.jpg" />
     <Content Include="Images\blog-post-3.jpg" />
+    <Content Include="Images\blog1.jpg" />
     <Content Include="Images\favicon.png" />
     <Content Include="Images\home_bg.jpg" />
     <Content Include="Images\home_bg3.jpg" />

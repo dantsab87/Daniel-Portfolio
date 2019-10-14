@@ -70,7 +70,7 @@ a:hover {
 }
 
 a:hover, a:focus {
-  color: #006bb3;
+  color: #b3d7ff;
   text-decoration: underline;
 }
 
@@ -314,7 +314,7 @@ nav ul li a {
 
 #about .div-img-bg {
   padding-bottom: 30px;
-  border: 20px solid #b8a07e;
+  border: 15px solid #b3d7ff;
 }
 
 #about .div-img-bg .about-img img {
@@ -349,10 +349,10 @@ nav ul li a {
 /*   Services
 /*-----------------------------------------------------------------------------------*/
 
-#services {
-  background: #eaeffa;
+#resume {
+  background: #FFFFFF;
   position: relative;
-  padding-bottom: 80px;
+  padding-bottom: 30px;
 }
 
 .owl-item {
@@ -369,21 +369,46 @@ nav ul li a {
   display: block;
 }
 
+.services-block span {
+    margin: 10px 0;
+    position: relative;
+    font-size: 13px;
+    color: #292929;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: block;
+}
+
+.services-block .s2 {
+    margin: 10px 0;
+    position: relative;
+    font-size: 13px;
+    color: #66adff;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    text-transform: none;
+    display: block;
+}
+
 .services-block .separator {
-  margin: 0;
-  font-size: 13px;
-  line-height: 22px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 22px;
 }
 
 .services-block i {
   font-size: 44px;
-  color: #b8a07e;
+  color: #0069d9; 
   line-height: 44px;
+
 }
 
 
-.services-carousel  .owl-stage-outer {
-  overflow: hidden;
+.services-carousel .owl-stage-outer {
+    margin-top: -60px;
+    overflow: hidden;
+    padding: 10px 0;
 }
 
 .services-carousel .owl-dots {
@@ -397,14 +422,14 @@ nav ul li a {
   width: 12px !important;
   height: 12px !important;
   border-radius: 50%;
-  border: 0;
+  border: none;
   padding: 0 !important;
   background-color: #ddd;
   cursor: pointer;
 }
 
 .services-carousel .owl-dot.active {
-  background-color: #b8a07e;
+  background-color: #b3d7ff;
 }
 
 .owl-nav {
@@ -516,7 +541,7 @@ nav ul li a {
   line-height: 24px;
   margin: 0 0 13px 0;
   font-weight: 500;
-  color: #292929;
+  color: #FFFFFF;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;
@@ -525,7 +550,7 @@ nav ul li a {
 }
 
 .journal-block .journal-info .journal-txt h4 a:hover {
-  color: #b8a07e;
+  color: #b3d7ff;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;
@@ -623,7 +648,7 @@ nav ul li a {
 
 #footer .socials-media ul li a {
   font-size: 24px;
-  color: #FFF;
+  color: #FFFFFF;
   letter-spacing: 0.1em;
   font-weight: 500;
   background: transparent;
@@ -636,7 +661,7 @@ nav ul li a {
 }
 
 #footer .socials-media ul li a:hover {
-  color: #0069d9;
+  color: #b3d7ff;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;
