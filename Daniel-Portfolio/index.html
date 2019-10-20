@@ -32,42 +32,72 @@
 
     <!--<link href="Content/component.css" rel="stylesheet" />
     <link href="Content/default.css" rel="stylesheet" />-->
-
     <!--my css code-->
+    <link href="Content/img.css" rel="stylesheet" />
     <style>
         p#subtitle {
-    text-transform: uppercase;
-    font-family: inherit;
-    font-size: .60rem;
-    letter-spacing: .2em;
-    text-shadow: 1px 1px 3px black; 
-    opacity: 0.7;
-    position: relative;
-    top: -18px;
-}
+            text-transform: uppercase;
+            font-family: inherit;
+            font-size: .60rem;
+            letter-spacing: .2em;
+            text-shadow: 1px 1px 3px black;
+            opacity: 0.7;
+            position: relative;
+            top: -18px;
+        }
+
         #HName {
-    opacity: 0.7;
-    text-shadow: 1px 1px 3px black; 
+            opacity: 0.7;
+            text-shadow: 1px 1px 3px black;
+        }
 
+        .shad {
+            color: #FFFFFF;
+            opacity: 0.7;
+            text-shadow: 1px 1px 3px black;
+        }
 
-}
+        .padN {
+            padding-top: 3px;
+            padding-right: 20px;
+            padding-bottom: 3px;
+            padding-left: 0px;
+        }
 
-    .shad {
-    color:#FFFFFF;
-    opacity: 0.7;
-    text-shadow: 1px 1px 3px black; 
-    }
+        .pimg {
+            cursor: pointer;
+        }
 
-    .padN{
-    padding-top: 3px;
-    padding-right: 20px;
-    padding-bottom: 3px;
-    padding-left: 0px;
-    }
+        .FBcolor {
+            color: #8217d7;
+            font-weight: bold;
+        }
 
-    .pimg {
-    cursor: pointer;
-    }
+        .Fzcolor {
+            color: #ed6b6b;
+        }
+
+        .Bzcolor {
+            color: #2170db;
+        }
+
+        .modrul {
+            text-align: left;
+        }
+
+        .modres {
+            text-align: center;
+        }
+
+        .sk_img {
+            width: 82px;
+            height: 77px;
+            background-repeat: no-repeat;
+        }
+
+        .my {
+            margin: 10px 0px 30px 0px;
+        }
 
 
     </style>
@@ -91,8 +121,8 @@
                     <li><a href="#header" class="smoothScroll shad">Home</a></li>
                     <li><a href="#about" class="smoothScroll shad">About</a></li>
                     <li><a href="#resume" class="smoothScroll shad">Resume</a></li>
-                    <li><a href="#portfolio" class="smoothScroll shad">Coding Challenges</a></li>
-                    <li><a href="#journal" class="smoothScroll shad">Blog</a></li>
+                    <li><a href="#projects" class="smoothScroll shad">Projects</a></li>
+                    <li><a href="#challenges" class="smoothScroll shad">Challenges</a></li>
                     <li><a href="#contact" class="smoothScroll shad">Contact</a></li>
                 </ul>
 
@@ -106,7 +136,7 @@
         <div class="container">
             <div class="header-content">
                 <h1 id="HName">Daniel Chang</h1>
-                <p id="subtitle">WEB DEVELOPER // BIOLOGIST // OUTDOORSMAN</p>
+                <p id="subtitle">.NET DEVELOPER // BIOLOGIST // OUTDOORSMAN</p>
 
                 <!--<ul class="list-unstyled list-social">
                     <li><a href="#"><i class="ion-social-facebook"></i></a></li>
@@ -136,13 +166,23 @@
                 <div class="col-lg-6">
                     <div class="about-descr">
 
-                        <h2>About Me</h2>
+                        <h2 class="my">About Me</h2>
                         <p class="separator">
                             Hello my name is Daniel Chang. I graduated at the University of North Carolina at Charlotte
                             with a BS in Biology and a BA in Art. I am currently attending CoderFoundry to further
                             pursue my knowledge in web development!
                         </p>
-
+                        <p></p>
+                        <h3 class="my">My Skills</h3>
+                        <table cellpadding="10" cellspacing="10" border="0">
+                            <tr>
+                                <td style="background-image: url('Images/1_html5.png');" class="sk_img"></td>
+                                <td style="background-image: url('Images/1_css3.png');" class="sk_img"></td>
+                                <td style="background-image: url('Images/1_js.png');" class="sk_img"></td>
+                                <td style="background-image: url('Images/1_jq.png');" class="sk_img"></td>
+                                <td style="background-image: url('Images/1_cs.png');" class="sk_img"></td>
+                            </tr>
+                        </table>
                     </div>
 
                 </div>
@@ -153,7 +193,7 @@
 
 
     <!-- end section about us -->
-    <!-- start section services -->
+    <!-- start section resume -->
     <div id="resume">
         <div class="container">
 
@@ -210,521 +250,13 @@
         </div>
 
     </div>
-    <!-- end section services -->
-    <!-- start section portfolio -->
-    <div id="portfolio" class="text-center paddsection">
+    <!-- end section resume -->
+    <!-- start section projects -->
+    <div id="projects" class="text-left paddsection">
 
         <div class="container">
             <div class="section-title text-center">
-                <h2>Coding Challenges</h2>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-
-                    <!--<div class="portfolio-list">
-
-                        <ul class="nav list-unstyled" id="portfolio-flters">
-                            <li class="filter filter-active" data-filter=".all">all</li>
-                            <li class="filter" data-filter=".branding">branding</li>
-                            <li class="filter" data-filter=".mockups">mockups</li>
-                            <li class="filter" data-filter=".uikits">ui kits</li>
-                            <li class="filter" data-filter=".webdesign">web design</li>
-                            <li class="filter" data-filter=".photography">photography</li>
-                        </ul>
-
-                    </div>-->
-                    <!--Start of Modal img1 - Bootstrap Grid-->
-                    <div class="modal fade" id="myModal">
-                        <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h2 class="modal-title">Coding Exercise - Bootstrap Grid</h2>
-                                    <button class="close" type="button" data-dismiss="modal">
-                                        <span class="font-weight-light" aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-
-
-                                    <div class="container text-left">
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="row h2">
-                                                    <div class="col-md-4">4</div>
-                                                    <div class="col-md-4">4</div>
-                                                    <div class="col-md-4">4</div>
-                                                </div>
-                                                <div class="row h2">
-                                                    <div class="col-md-6">6</div>
-                                                    <div class="col-md-6">6</div>
-                                                </div>
-                                                <div class="row h2">
-                                                    <div class="col-md-12">12</div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col">
-                                                <div class="row h4">
-                                                    <div class="col-md-3">3</div>
-                                                    <div class="col-md-3">3</div>
-                                                    <div class="col-md-3">3</div>
-                                                    <div class="col-md-3">3</div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col">
-                                                <div class="row h5">
-                                                    <div class="col-sm-8">8</div>
-                                                    <div class="col-sm-4">4</div>
-                                                </div>
-                                                <div class="row h5">
-                                                    <div class="col-sm-6">6</div>
-                                                    <div class="col-sm-3">3</div>
-                                                    <div class="col-sm-3">3</div>
-                                                </div>
-                                                <div class="row h5">
-                                                    <div class="col-sm-2">2</div>
-                                                    <div class="col-sm-3">3</div>
-                                                    <div class="col-sm-2">2</div>
-                                                    <div class="col-sm-3">3</div>
-                                                    <div class="col-sm-2">2</div>
-                                                </div>
-                                                <div class="row h5">
-                                                    <div class="col-sm-1">1</div>
-                                                    <div class="col-sm-1">1</div>
-                                                    <div class="col-sm-1">1</div>
-                                                    <div class="col-sm-1">1</div>
-                                                    <div class="col-sm-1">1</div>
-                                                    <div class="col-sm-1">1</div>
-                                                    <div class="col-sm-1">1</div>
-                                                    <div class="col-sm-1">1</div>
-                                                    <div class="col-sm-1">1</div>
-                                                    <div class="col-sm-1">1</div>
-                                                    <div class="col-sm-1">1</div>
-                                                    <div class="col-sm-1">1</div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-
-
-
-                                    <div class="container text-left">
-                                        <div class="row">
-                                            <div class="col-md-3">1</div>
-                                            <div class="col-md-9">2</div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12 h2">H2</div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-2">3</div>
-                                            <div class="col-md-2">4</div>
-                                            <div class="col-md-2">5</div>
-                                            <div class="col-md-2">6</div>
-                                            <div class="col-md-2">7</div>
-                                            <div class="col-md-2">8</div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12 h3">H3</div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-1">9</div>
-                                            <div class="col-md-1">10</div>
-                                            <div class="col-md-1">11</div>
-                                            <div class="col-md-1">12</div>
-                                            <div class="col-md-1">13</div>
-                                            <div class="col-md-1">14</div>
-                                            <div class="col-md-1">15</div>
-                                            <div class="col-md-1">16</div>
-                                            <div class="col-md-1">17</div>
-                                            <div class="col-md-1">18</div>
-                                            <div class="col-md-1">19</div>
-                                            <div class="col-md-1">20</div>
-                                        </div>
-                                        <div class="row h4">
-                                            <div class="col-md-3">H4</div>
-                                            <div class="col-md-3">H4</div>
-                                            <div class="col-md-6">H4</div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-3">21</div>
-                                            <div class="col-md-3">22</div>
-                                            <div class="col-md-6">23</div>
-                                        </div>
-                                    </div>
-
-
-
-
-                                </div>
-                                <div class="modal-footer"><button class="btn btn-primary btn-sm" type="button" data-dismiss="modal">Close</button></div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End of modal-->
-
-                    <div class="portfolio-container">
-                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits webdesign">
-                            <img src="Images/img1.jpg" data-toggle="modal" data-target="#myModal" alt="Bootstrap Grid" class="img-responsive pimg">
-                            <div class="carousel-caption">
-                                <h3 data-toggle="modal" data-target="#myModal">Bootstrap Grid</h3>
-                            </div>
-                        </div>
-
-
-
-                        <!--Start of Modal2 img2 - Input sum-->
-                        <div class="modal fade" id="myModal2">
-                            <div class="modal-dialog modal-lg modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h2 class="modal-title">Coding Exercise - The Sum</h2>
-                                        <button class="close" type="button" data-dismiss="modal">
-                                            <span class="font-weight-light">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-
-                                        <div class="container">
-                                            <div class="col-lg">
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <div class="row padN">
-                                                            <input type="text" id="input1">
-                                                        </div>
-                                                        <div class="row padN">
-                                                            <input type="text" id="input2">
-                                                        </div>
-                                                        <div class="row padN">
-                                                            <input type="text" id="input3">
-                                                        </div>
-                                                        <div class="row padN">
-                                                            <input type="text" id="input4">
-                                                        </div>
-                                                        <div class="row padN">
-                                                            <input type="text" id="input5">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="row">Your Results</div>
-                                                        <div class="row">
-                                                            <p id="results"></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row padN">
-                                                    <button class="btn btn-primary btn-sm" id="btnclick">Submit</button>
-                                                    <button class="btn btn-secondary btn-sm clearbtn">Clear</button>
-                                                </div>
-                                                <div class="row-lg">
-                                                    <pre class="brush: js">
-        $("#btnclick").click(function () {
-            var num1 = Number($("#input1").val());
-            var num2 = Number($("#input2").val());
-            var num3 = Number($("#input3").val());
-            var num4 = Number($("#input4").val());
-            var num5 = Number($("#input5").val());
-
-            var sum = num1 + num2 + num3 + num4 + num5
-            var output = "The sum of your numbers: " + sum + ".";
-            $("#results").text(output);
-
-        })
-
-        $(".clearbtn").click(function () {
-            $("#results").empty();
-            $("#input1").val("");
-            $("#input2").val("");
-            $("#input3").val("");
-            $("#input4").val("");
-            $("#input5").val("");
-        })
-
-
-        $("#input1, #input2, #input3, #input4, #input5").keypress(function (e) {
-            if (!(e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 96 && e.keyCode <= 105)) {
-                return false;
-            }
-        });
-                                                    </pre>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-
-
-                                    </div>
-                                    <div class="modal-footer"><button class="btn btn-primary btn-sm clearbtn" type="button" data-dismiss="modal">Close</button></div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End of modal-->
-
-                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits photography">
-                            <img src="Images/img2.jpg" data-toggle="modal" data-target="#myModal2" class="img-responsive pimg">
-                            <div class="carousel-caption">
-                                <h3 data-toggle="modal" data-target="#myModal2">The Sum</h3>
-                            </div>
-                        </div>
-
-                        <!--Start of Modal3 img3 - The 5s-->
-                        <div class="modal fade" id="myModal3">
-                            <div class="modal-dialog modal-lg modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h2 class="modal-title">Coding Exercise - the 5s</h2>
-                                        <button class="close" type="button" data-dismiss="modal">
-                                            <span class="font-weight-light">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-
-                                        <div class="container">
-                                            <div class="col-lg">
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <div class="row">Input Numbers below:</div>
-                                                        <div class="row padN">
-                                                            <input type="text" id="5input1">
-                                                        </div>
-                                                        <div class="row padN">
-                                                            <input type="text" id="5input2">
-                                                        </div>
-                                                        <div class="row padN">
-                                                            <input type="text" id="5input3">
-                                                        </div>
-                                                        <div class="row padN">
-                                                            <input type="text" id="5input4">
-                                                        </div>
-                                                        <div class="row padN">
-                                                            <input type="text" id="5input5">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="row">Your Results</div>
-                                                        <div class="row padN" id="1results">
-                                                        </div>
-                                                        <div class="row padN" id="2results">
-                                                        </div>
-                                                        <div class="row padN" id="3results">
-                                                        </div>
-                                                        <div class="row padN" id="4results">
-                                                        </div>
-                                                        <div class="row padN" id="5results">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row padN">
-                                                    <button class="btn btn-primary btn-sm" id="5btnclick">Submit</button>
-                                                    <button class="btn btn-secondary btn-sm clearbtn">Clear</button>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-                                    <div class="modal-footer"><button class="btn btn-primary btn-sm clearbtn" type="button" data-dismiss="modal">Close</button></div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End of modal-->
-
-                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding webdesig photographyn view overlay zoom">
-                            <img src="Images/img3.jpg" data-toggle="modal" data-target="#myModal3" alt="The 5s" class="img-responsive pimg">
-                            <div class="carousel-caption">
-                                <h3 data-toggle="modal" data-target="#myModal3">5 Numbers</h3>
-                            </div>
-                        </div>
-
-
-                        <!--Start of Modal4 img4 - Factorial-->
-                        <div class="modal fade" id="myModal4">
-                            <div class="modal-dialog modal-lg modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h2 class="modal-title">Coding Exercise - Factorial</h2>
-                                        <button class="close" type="button" data-dismiss="modal">
-                                            <span class="font-weight-light">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="container">
-                                            <div class="col-lg">
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <div class="row">Input a Number below:</div>
-                                                        <div class="row padN">
-                                                            <input type="text" id="ftrinput">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="row">Your Results:</div>
-                                                        <div class="row" id="ftrresults">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row padN">
-                                                    <button class="btn btn-primary btn-sm" id="ftrclick">Submit</button>
-                                                    <button class="btn btn-secondary btn-sm clearbtn">Clear</button>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-                                    <div class="modal-footer"><button class="btn btn-primary btn-sm clearbtn" type="button" data-dismiss="modal">Close</button></div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End of modal-->
-
-
-
-                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups webdesign photography">
-                            <img src="Images/img4.jpg" data-toggle="modal" data-target="#myModal4" alt="Factorial" class="img-responsive pimg">
-                            <div class="carousel-caption">
-                                <h3 data-toggle="modal" data-target="#myModal4">Factorial</h3>
-                            </div>
-                        </div>
-
-
-
-                        <!--Start of Modal5 img5 - Palindrome-->
-                        <div class="modal fade" id="myModal5">
-                            <div class="modal-dialog modal-lg modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h2 class="modal-title">Coding Exercise - Palindrome</h2>
-                                        <button class="close" type="button" data-dismiss="modal">
-                                            <span class="font-weight-light">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="container">
-                                            <div class="col-lg">
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <div class="row">Input a word below:</div>
-                                                        <div class="row padN">
-                                                            <input type="text" id="palinput">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="row">Your Results:</div>
-                                                        <div class="row" id="palresults">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row padN">
-                                                    <button class="btn btn-primary btn-sm" id="palclick">Submit</button>
-                                                    <button class="btn btn-secondary btn-sm clearbtn">Clear</button>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-                                    <div class="modal-footer"><button class="btn btn-primary btn-sm clearbtn" type="button" data-dismiss="modal">Close</button></div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End of modal-->
-
-
-
-
-                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits photography">
-                            <img src="Images/img5.jpg" data-toggle="modal" data-target="#myModal5" alt="Palindrome" class="img-responsive pimg">
-                            <div class="carousel-caption">
-                                <h3 data-toggle="modal" data-target="#myModal5">Palindrome (coming soon)</h3>
-                            </div>
-                        </div>
-
-
-                        <!--<div class="portfolio-container">
-                            <div class="row">
-                                <ul class="grid cs-style-4">
-                                    <li>
-                                        <figure>
-                                            <div><img src="Images/img1.jpg" alt=""></div>
-                                            <figcaption>
-                                                <h2>Bootstrap Grid</h2>
-                                                <a href="#myModal" data-toggle="modal" data-target="#myModal">Take a look</a>
-                                            </figcaption>
-                                        </figure>
-                                    </li>
-                                    <li>
-                                        <figure>
-                                            <div><img src="Images/img2.jpg" alt="" data-toggle="modal" data-target="#myModal2"></div>
-                                            <figcaption>
-                                                <h2>Bootstrap Grid</h2>
-                                                <a href="#myModal3" data-toggle="modal" data-target="#myModal3">Take a look</a>
-                                            </figcaption>
-                                        </figure>
-                                    </li>
-                                    <li>
-                                        <figure>
-                                            <div><img src="Images/img3.jpg" alt="" data-toggle="modal" data-target="#myModal3"></div>
-                                            <figcaption>
-                                                <h2>Bootstrap Grid</h2>
-                                                <a href="#myModal3" data-toggle="modal" data-target="#myModal3">Take a look</a>
-                                            </figcaption>
-                                        </figure>
-                                    </li>
-                                    <li>
-                                        <figure>
-                                            <div><img src="Images/img4.jpg" alt="" data-toggle="modal" data-target="#myModal4"></div>
-                                            <figcaption>
-                                                <h2>Bootstrap Grid</h2>
-                                                <a href="#myModal4" data-toggle="modal" data-target="#myModal4">Take a look</a>
-                                            </figcaption>
-                                        </figure>
-                                    </li>
-                                    <li>
-                                        <figure>
-                                            <div><img src="Images/img5.jpg" alt="" data-toggle="modal" data-target="#myModal5"></div>
-                                            <figcaption>
-                                                <h2>Bootstrap Grid</h2>
-                                                <a href="#myModal5" data-toggle="modal" data-target="#myModal5">Take a look</a>
-                                            </figcaption>
-                                        </figure>
-                                    </li>
-                                    <li>
-                                        <figure>
-                                            <div><img src="Images/6.jpg" alt="" data-toggle="modal" data-target="#myModal6"></div>
-                                            <figcaption>
-                                                <h2>Bootstrap Grid</h2>
-                                                <a href="#myModal6" data-toggle="modal" data-target="#myModal6">Take a look</a>
-                                            </figcaption>
-                                        </figure>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>-->
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <!-- End section portfolio -->
-    <!-- start section journal -->
-    <div id="journal" class="text-left paddsection">
-
-        <div class="container">
-            <div class="section-title text-center">
-                <h2>My Blog</h2>
+                <h2>Projects</h2>
             </div>
         </div>
 
@@ -739,7 +271,7 @@
 
                             <div class="journal-txt">
 
-                                <h4><a href="blog-single.html">MAKING A BLOG</a></h4>
+                                <h4><a href="blog-single.html">MY BLOG</a></h4>
                                 <p class="separator">
                                     Created a blog during week 2 at CoderFoundry
                                 </p>
@@ -750,30 +282,638 @@
                     </div>
 
 
-                    <!--<div class="col-lg-4 col-md-6">
-                        <div class="journal-info">
+                </div>
+            </div>
+        </div>
 
-                            <a href="blog-single.html"><img src="images/blog-post-3.jpg" class="img-responsive" alt="img"></a>
+    </div>
+    <!-- End section projects -->
+    <!-- start section challanges-->
+    <div id="challenges" class="text-left paddsection">
 
-                            <div class="journal-txt">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Coding Challenges</h2>
+            </div>
+        </div>
 
-                                <h4><a href="blog-single.html">NEW LIFE CIVILIZATIONS TO BOLDLY</a></h4>
-                                <p class="separator">
-                                    To an English person, it will seem like simplified English
-                                </p>
+        <div class="container">
+            <div class="journal-block">
+                <div class="row">
+
+
+                    <div class="row">
+                        <div class="col-md-12 col-12 rounded">
+                            <div class="row">
+
+                                <div class="col-md-4 col-12">
+                                    <figure class="hover-box bg-imghov text-white">
+                                        <img src="Images/img6.jpg" class="w-100 img-thumbnail pimg" data-toggle="modal" data-target="#myModal6">
+                                        <figcaption class="text-right" data-toggle="modal" data-target="#myModal6">
+                                            <h3 class="bg-text p-1 mb-1">FizzBuzz</h3>
+                                            <h4>Coding Challenge</h4>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="col-md-4 col-12">
+                                    <figure class="hover-box bg-imghov text-white">
+                                        <img src="Images/img2.jpg" class="w-100 img-thumbnail pimg" data-toggle="modal" data-target="#myModal5">
+                                        <figcaption class="text-right" data-toggle="modal" data-target="#myModal5">
+                                            <h3 class="bg-text p-1 mb-1">Palindrome</h3>
+                                            <h4>Coding Challenge</h4>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="col-md-4 col-12">
+                                    <figure class="hover-box bg-imghov text-white">
+                                        <img src="Images/img3.jpg" class="w-100 img-thumbnail pimg" data-toggle="modal" data-target="#myModal4">
+                                        <figcaption class="text-right" data-toggle="modal" data-target="#myModal4">
+                                            <h3 class="bg-text p-1 mb-1">Factorial</h3>
+                                            <h4>Coding Challenge</h4>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+
+
+
+                                <div class="col-md-4 col-12">
+                                    <figure class="hover-box bg-imghov text-white">
+                                        <img src="Images/img4.jpg" class="w-100 img-thumbnail pimg" data-toggle="modal" data-target="#myModal3">
+                                        <figcaption class="text-right" data-toggle="modal" data-target="#myModal3">
+                                            <h3 class="bg-text p-1 mb-1">The 5 Numbers</h3>
+                                            <h4>Coding Challenge</h4>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="col-md-4 col-12">
+                                    <figure class="hover-box bg-imghov text-white">
+                                        <img src="Images/img5.jpg" class="w-100 img-thumbnail pimg" data-toggle="modal" data-target="#myModal2">
+                                        <figcaption class="text-right" data-toggle="modal" data-target="#myModal2">
+                                            <h3 class="bg-text p-1 mb-1">The Sum of Numbers</h3>
+                                            <h4>Coding Challenge</h4>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="col-md-4 col-12">
+                                    <figure class="hover-box bg-imghov text-white">
+                                        <img src="Images/img1.jpg" class="w-100 img-thumbnail pimg" data-toggle="modal" data-target="#myModal">
+                                        <figcaption class="text-right" data-toggle="modal" data-target="#myModal">
+                                            <h3 class="bg-text p-1 mb-1">Bootstrap Grid</h3>
+                                            <h4>Coding Challenge</h4>
+                                        </figcaption>
+                                    </figure>
+                                </div>
 
                             </div>
 
                         </div>
-                    </div>-->
+                    </div>
+
+
 
                 </div>
             </div>
         </div>
 
     </div>
-    <!-- End section journal -->
-    <!-- start sectoion contact -->
+
+
+
+
+    <!--Start of Modal6 img6 - FizzBuzz-->
+    <div class="modal fade" id="myModal6">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Coding Exercise - FizzBuzz</h2>
+                    <button class="close" type="button" data-dismiss="modal">
+                        <span class="font-weight-light">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="row padN modrul">
+                                        Enter two numbers between 1 - 100 and submit.<BR>
+                                        Your results will show the multiples of the first number as "Fizz", and the second number as "Buzz".<BR>
+                                        If both numbers share the same multiple, it'll result in <span class="FBcolor">FizzBuzz</span>!!
+                                    </div>
+                                    <div class="row padN">
+                                        <input type="text" id="Fizval">
+                                    </div>
+                                    <div class="row padN">
+                                        <input type="text" id="Buzval">
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                </div>
+                                <div class="col-6">
+                                    <div class="row modres">Your Results:</div>
+                                    <div class="row modres" id="FBres">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row padN">
+                                <button class="btn btn-primary btn-sm" id="FBclick">Submit</button>
+                                <button class="btn btn-secondary btn-sm clearbtn">Clear</button>
+                                <button class="btn btn-success btn-sm clearbtn" id="FBtglOn">Show Code</button>
+                            </div>
+
+                            <div class="row-lg" id="FBcode">
+                                <pre class="brush: js">
+
+                                                            $("#FBclick").click(function () {
+                                                                var value1 = Number($("#Fizval").val());
+                                                                var value2 = Number($("#Buzval").val());
+                                                                var ans = "";
+
+                                                                for (let i = 1; i <= 100; i++) {
+                                                                    if (i%value1 == 0 && i%value2 == 0) {
+                                                                        ans += ' <span class="FBcolor">FizzBuzz</span> ';
+                                                                    }
+                                                                    else if (i % value1 == 0) {
+                                                                        ans += ' <span class="Fzcolor">Fizz</span> ';
+                                                                    }
+                                                                    else if (i % value2 == 0) {
+                                                                        ans += ' <span class="Bzcolor">Buzz</span> ';
+                                                                    }
+                                                                    else {
+                                                                        ans += i + ' ';
+                                                                    }
+                                                                }
+
+                                                                $("#FBres").html(ans);
+                                                            });
+
+                                                            $(".clearbtn").click(function () {
+                                                                $("#FBres").empty();
+                                                                $("#Fizval").val("");
+                                                                $("#Buzval").val("");
+                                                                $("#FBres").text("");
+                                                            });
+
+                                                            $("#Fizval").keypress(function (e) {
+                                                                if (!(e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 96 && e.keyCode <= 105)) {
+                                                                    return false;
+                                                                }
+                                                            });
+
+                                                            $("#Buzval").keypress(function (e) {
+                                                                if (!(e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 96 && e.keyCode <= 105)) {
+                                                                    return false;
+                                                                }
+                                                            });
+
+	                                                </pre>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer"><button class="btn btn-primary btn-sm clearbtn" type="button" data-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+    <!--End of modal-->
+    <!--Start of Modal5 img5 - Palindrome-->
+    <div class="modal fade" id="myModal5">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Coding Exercise - Palindrome</h2>
+                    <button class="close" type="button" data-dismiss="modal">
+                        <span class="font-weight-light">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="col-lg">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="row">Input a word below:</div>
+                                    <div class="row padN">
+                                        <input type="text" id="palinput">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">Your Results:</div>
+                                    <div class="row" id="palresults">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row padN">
+                                <button class="btn btn-primary btn-sm" id="palclick">Submit</button>
+                                <button class="btn btn-secondary btn-sm clearbtn">Clear</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="modal-footer"><button class="btn btn-primary btn-sm clearbtn" type="button" data-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+    <!--End of modal-->
+    <!--Start of Modal4 img4 - Factorial-->
+    <div class="modal fade" id="myModal4">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Coding Exercise - Factorial</h2>
+                    <button class="close" type="button" data-dismiss="modal">
+                        <span class="font-weight-light">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="col-lg">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="row">Input a Number below:</div>
+                                    <div class="row padN">
+                                        <input type="text" id="ftrinput">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">Your Results:</div>
+                                    <div class="row" id="ftrresults">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row padN">
+                                <button class="btn btn-primary btn-sm" id="ftrclick">Submit</button>
+                                <button class="btn btn-secondary btn-sm clearbtn">Clear</button>
+                            </div>
+                            <div class="row-lg">
+                                <pre class="brush: js">
+                                                            $("#ftrclick").click(function () {
+
+                                                                var inputvalue = $("#ftrinput").val();
+                                                                x = 1;
+                                                                for (i = inputvalue; i > 0; i--) {
+                                                                    x *= i;
+
+                                                                }
+
+                                                                $("#ftrresults").text("The factorial of " + inputvalue + " is: " + x + ".");
+
+                                                            });
+
+
+
+                                                            $(".clearbtn").click(function () {
+                                                                $("#ftrresults").empty();
+                                                                $("#ftrinput").val("");
+
+                                                            })
+
+                                                            $("#ftrinput").keypress(function (e) {
+                                                                if (!(e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 96 && e.keyCode <= 105)) {
+                                                                    return false;
+                                                                }
+                                                            });
+
+                                                    </pre>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="modal-footer"><button class="btn btn-primary btn-sm clearbtn" type="button" data-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+    <!--End of modal-->
+    <!--Start of Modal3 img3 - The 5s-->
+    <div class="modal fade" id="myModal3">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Coding Exercise - the 5s</h2>
+                    <button class="close" type="button" data-dismiss="modal">
+                        <span class="font-weight-light">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="container">
+                        <div class="col-lg">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="row">Input Numbers below:</div>
+                                    <div class="row padN">
+                                        <input type="text" id="5input1">
+                                    </div>
+                                    <div class="row padN">
+                                        <input type="text" id="5input2">
+                                    </div>
+                                    <div class="row padN">
+                                        <input type="text" id="5input3">
+                                    </div>
+                                    <div class="row padN">
+                                        <input type="text" id="5input4">
+                                    </div>
+                                    <div class="row padN">
+                                        <input type="text" id="5input5">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">Your Results</div>
+                                    <div class="row padN" id="1results">
+                                    </div>
+                                    <div class="row padN" id="2results">
+                                    </div>
+                                    <div class="row padN" id="3results">
+                                    </div>
+                                    <div class="row padN" id="4results">
+                                    </div>
+                                    <div class="row padN" id="5results">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row padN">
+                                <button class="btn btn-primary btn-sm" id="5btnclick">Submit</button>
+                                <button class="btn btn-secondary btn-sm clearbtn">Clear</button>
+                            </div>
+                            <div class="row-lg">
+                                <pre class="brush: js">
+                                                            $("#5btnclick").click(function () {
+                                                                var num1 = Number($("#5input1").val());
+                                                                var num2 = Number($("#5input2").val());
+                                                                var num3 = Number($("#5input3").val());
+                                                                var num4 = Number($("#5input4").val());
+                                                                var num5 = Number($("#5input5").val());
+
+
+                                                                var least = Math.min(num1, num2, num3, num4, num5);
+                                                                var greatest = Math.max(num1, num2, num3, num4, num5);
+                                                                var sum = num1 + num2 + num3 + num4 + num5;
+                                                                var mean = (num1 + num2 + num3 + num4 + num5) / 2;
+                                                                var multi = num1 * num2 * num3 * num4 * num5;
+
+
+                                                                $("#1results").text(least + " is the lowest number.");
+                                                                $("#2results").text(greatest + " is the greatest number.");
+                                                                $("#3results").text(mean + " is mean of the numbers.");
+                                                                $("#4results").text(sum + " is the sum of all the numbers.");
+                                                                $("#5results").text(multi + " is the product of all the numbers.");
+
+                                                            })
+
+                                                            $(".clearbtn").click(function () {
+                                                                $("#1results").empty();
+                                                                $("#2results").empty();
+                                                                $("#3results").empty();
+                                                                $("#4results").empty();
+                                                                $("#5results").empty();
+                                                                $("#5input1").val("");
+                                                                $("#5input2").val("");
+                                                                $("#5input3").val("");
+                                                                $("#5input4").val("");
+                                                                $("#5input5").val("");
+                                                            })
+
+                                                            $("#5input1, #5input2, #5input3, #5input4, #5input5").keypress(function (e) {
+                                                                if (!(e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 96 && e.keyCode <= 105)) {
+                                                                    return false;
+                                                                }
+                                                            });
+
+                                                    </pre>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="modal-footer"><button class="btn btn-primary btn-sm clearbtn" type="button" data-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+    <!--End of modal-->
+    <!--Start of Modal2 img2 - Input sum-->
+    <div class="modal fade" id="myModal2">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Coding Exercise - The Sum</h2>
+                    <button class="close" type="button" data-dismiss="modal">
+                        <span class="font-weight-light">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="container">
+                        <div class="col-lg">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="row padN">
+                                        <input type="text" id="input1">
+                                    </div>
+                                    <div class="row padN">
+                                        <input type="text" id="input2">
+                                    </div>
+                                    <div class="row padN">
+                                        <input type="text" id="input3">
+                                    </div>
+                                    <div class="row padN">
+                                        <input type="text" id="input4">
+                                    </div>
+                                    <div class="row padN">
+                                        <input type="text" id="input5">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">Your Results</div>
+                                    <div class="row">
+                                        <p id="results"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row padN">
+                                <button class="btn btn-primary btn-sm" id="btnclick">Submit</button>
+                                <button class="btn btn-secondary btn-sm clearbtn">Clear</button>
+                            </div>
+                            <div class="row-lg">
+                                <pre class="brush: js">
+                                                        $("#btnclick").click(function () {
+                                                            var num1 = Number($("#input1").val());
+                                                            var num2 = Number($("#input2").val());
+                                                            var num3 = Number($("#input3").val());
+                                                            var num4 = Number($("#input4").val());
+                                                            var num5 = Number($("#input5").val());
+
+                                                            var sum = num1 + num2 + num3 + num4 + num5
+                                                            var output = "The sum of your numbers: " + sum + ".";
+                                                            $("#results").text(output);
+
+                                                        })
+
+                                                        $(".clearbtn").click(function () {
+                                                            $("#results").empty();
+                                                            $("#input1").val("");
+                                                            $("#input2").val("");
+                                                            $("#input3").val("");
+                                                            $("#input4").val("");
+                                                            $("#input5").val("");
+                                                        })
+
+
+                                                        $("#input1, #input2, #input3, #input4, #input5").keypress(function (e) {
+                                                            if (!(e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 96 && e.keyCode <= 105)) {
+                                                                return false;
+                                                            }
+                                                        });
+                                                    </pre>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <div class="modal-footer"><button class="btn btn-primary btn-sm clearbtn" type="button" data-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+    <!--End of modal-->
+    <!--Start of Modal img1 - Bootstrap Grid-->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Coding Exercise - Bootstrap Grid</h2>
+                    <button class="close" type="button" data-dismiss="modal">
+                        <span class="font-weight-light" aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container text-left">
+                        <div class="row">
+                            <div class="col">
+                                <div class="row h2">
+                                    <div class="col-md-4">4</div>
+                                    <div class="col-md-4">4</div>
+                                    <div class="col-md-4">4</div>
+                                </div>
+                                <div class="row h2">
+                                    <div class="col-md-6">6</div>
+                                    <div class="col-md-6">6</div>
+                                </div>
+                                <div class="row h2">
+                                    <div class="col-md-12">12</div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="row h4">
+                                    <div class="col-md-3">3</div>
+                                    <div class="col-md-3">3</div>
+                                    <div class="col-md-3">3</div>
+                                    <div class="col-md-3">3</div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="row h5">
+                                    <div class="col-sm-8">8</div>
+                                    <div class="col-sm-4">4</div>
+                                </div>
+                                <div class="row h5">
+                                    <div class="col-sm-6">6</div>
+                                    <div class="col-sm-3">3</div>
+                                    <div class="col-sm-3">3</div>
+                                </div>
+                                <div class="row h5">
+                                    <div class="col-sm-2">2</div>
+                                    <div class="col-sm-3">3</div>
+                                    <div class="col-sm-2">2</div>
+                                    <div class="col-sm-3">3</div>
+                                    <div class="col-sm-2">2</div>
+                                </div>
+                                <div class="row h5">
+                                    <div class="col-sm-1">1</div>
+                                    <div class="col-sm-1">1</div>
+                                    <div class="col-sm-1">1</div>
+                                    <div class="col-sm-1">1</div>
+                                    <div class="col-sm-1">1</div>
+                                    <div class="col-sm-1">1</div>
+                                    <div class="col-sm-1">1</div>
+                                    <div class="col-sm-1">1</div>
+                                    <div class="col-sm-1">1</div>
+                                    <div class="col-sm-1">1</div>
+                                    <div class="col-sm-1">1</div>
+                                    <div class="col-sm-1">1</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="container text-left">
+                        <div class="row">
+                            <div class="col-md-3">1</div>
+                            <div class="col-md-9">2</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 h2">H2</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">3</div>
+                            <div class="col-md-2">4</div>
+                            <div class="col-md-2">5</div>
+                            <div class="col-md-2">6</div>
+                            <div class="col-md-2">7</div>
+                            <div class="col-md-2">8</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 h3">H3</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1">9</div>
+                            <div class="col-md-1">10</div>
+                            <div class="col-md-1">11</div>
+                            <div class="col-md-1">12</div>
+                            <div class="col-md-1">13</div>
+                            <div class="col-md-1">14</div>
+                            <div class="col-md-1">15</div>
+                            <div class="col-md-1">16</div>
+                            <div class="col-md-1">17</div>
+                            <div class="col-md-1">18</div>
+                            <div class="col-md-1">19</div>
+                            <div class="col-md-1">20</div>
+                        </div>
+                        <div class="row h4">
+                            <div class="col-md-3">H4</div>
+                            <div class="col-md-3">H4</div>
+                            <div class="col-md-6">H4</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">21</div>
+                            <div class="col-md-3">22</div>
+                            <div class="col-md-6">23</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer"><button class="btn btn-primary btn-sm" type="button" data-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+    <!--End of modal-->
+    <!-- End section challenges -->
+    <!-- start section contact -->
     <div id="contact" class="paddsection">
         <div class="container">
             <div class="contact-block1">
@@ -785,7 +925,7 @@
                             <h2 class="mb-30">CONTACT INFO:</h2>
 
                             <ul class="contact-details">
-                                <li><span>1234 Fake St</span></li>
+                                <li><span></span></li>
                                 <li><span>Charlotte, North Carolina</span></li>
                                 <li><span>(704) 877-0741</span></li>
                                 <li><span>dantsab87@gmail.com</span></li>
@@ -840,7 +980,7 @@
             </div>
         </div>
     </div>
-    <!-- start sectoion contact -->
+    <!-- start section contact -->
     <!-- start section footer -->
     <div id="footer" class="text-center">
         <div class="container">
@@ -885,6 +1025,17 @@
     <!-- Template Main Javascript File -->
     <script src="Scripts/main.js"></script>
 
+    <!--TESTING MY IMAGE ANIMATION-->
+    <!--<script src="Scripts/tilt.jquery.js"></script>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $('.portfolio-thumbnail').tilt({
+                        glare: true,
+                        maxGlare: .5,
+                    })
+                })
+            </script>-->
+    <!--test end-->
     <!--SyntaxHighlighter-->
     <script src="Scripts/SyntaxHighlighter/scripts/shCore.js"></script>
     <script src="Scripts/SyntaxHighlighter/scripts/shBrushJScript.js"></script>
@@ -1003,8 +1154,94 @@
     </script>
 
     <!--Script for Palindrome-->
+    <script>
+        $("#palclick").click(function () {
 
+            var pldm = $("#palinput").val();
+            var len = pldm.length();
+            var rev = str.split("").reverse("").join("");
+            for (i = len; i >= 0; i--) {
+                rev += pldm[i];
+            }
+            if (pldm == rev) {
+                $("#palresults").text(pldm + "is a palindrome.");
+            }
+            else {
+                $("#palresults").text(pldm + "is NOT a palindrome.");
+            }
+
+        });
+
+
+        $(".clearbtn").click(function () {
+            $("#palresults").empty();
+            $("#palinput").val("");
+
+        });
+
+
+    </script>
+
+
+    <!--Fizz Buzz-->
+    <Script>
+        $("#FBclick").click(function () {
+            var value1 = Number($("#Fizval").val());
+            var value2 = Number($("#Buzval").val());
+            var ans = "";
+
+            for (let i = 1; i <= 100; i++) {
+                if (i % value1 == 0 && i % value2 == 0) {
+                    ans += ' <span class="FBcolor">FizzBuzz</span> ';
+                }
+                else if (i % value1 == 0) {
+                    ans += ' <span class="Fzcolor">Fizz</span> ';
+                }
+                else if (i % value2 == 0) {
+                    ans += ' <span class="Bzcolor">Buzz</span> ';
+                }
+                else {
+                    ans += i + ' ';
+                }
+            }
+
+            $("#FBres").html(ans);
+        });
+
+        $(".clearbtn").click(function () {
+            $("#FBres").empty();
+            $("#Fizval").val("");
+            $("#Buzval").val("");
+            $("#FBres").text("");
+        });
+
+        $("#Fizval").keypress(function (e) {
+            if (!(e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 96 && e.keyCode <= 105)) {
+                return false;
+            }
+        });
+
+        $("#Buzval").keypress(function (e) {
+            if (!(e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 96 && e.keyCode <= 105)) {
+                return false;
+            }
+        });
+
+
+        $("#FBcode").hide();
+        $("#FBtglOn").click(function () {
+            $("#FBcode").toggle();
+
+            if ($(this).text() == "Show Code") {
+                $(this).text("Hide Code");
+            }
+            else {
+                $(this).text("Show Code")
+            };
+        });
+
+    </Script>
 
 </body>
 
-</html>
+</html >
