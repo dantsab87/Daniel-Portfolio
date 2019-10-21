@@ -267,11 +267,11 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="journal-info">
 
-                            <a href="/blog"><img src="images/blog1.jpg" class="img-responsive" alt="img"></a>
+                            <a href="https://dchangblog.azurewebsites.net"><img src="images/blog1.jpg" class="img-responsive" alt="img"></a>
 
                             <div class="journal-txt">
 
-                                <h4><a href="blog-single.html">MY BLOG</a></h4>
+                                <h4><a href="https://dchangblog.azurewebsites.net">MY BLOG</a></h4>
                                 <p class="separator">
                                     Created a blog during week 2 at CoderFoundry
                                 </p>
@@ -510,10 +510,47 @@
                             <div class="row padN">
                                 <button class="btn btn-primary btn-sm" id="palclick">Submit</button>
                                 <button class="btn btn-secondary btn-sm clearbtn">Clear</button>
+                                <button class="btn btn-success btn-sm clearbtn" id="paltglOn">Show Code</button>
+                            </div>
+
+                            <div class="row-lg" id="palcode">
+                                <pre class="brush: js">
+
+                                    $("#palclick").click(function () {
+                                        var pldm = $("#palinput").val();
+                                        var len = pldm.length - 1;
+                                        var rev = "";
+                                        for (i = len; i >= 0; i--) {
+                                            rev += pldm[i];
+                                        }
+                                        if (pldm == rev) {
+                                            $("#palresults").text(pldm + " is a palindrome.");
+                                        }
+                                        else {
+                                            $("#palresults").text(pldm + " is NOT a palindrome.");
+                                        }
+                                    });
+                                    $(".clearbtn").click(function () {
+                                        $("#palresults").empty();
+                                        $("#palinput").val("");
+                                    });
+
+                                    $("#palcode").hide();
+                                    $("#paltglOn").click(function () {
+                                        $("#palcode").toggle();
+
+                                        if ($(this).text() == "Show Code") {
+                                            $(this).text("Hide Code");
+                                        }
+                                        else {
+                                            $(this).text("Show Code")
+                                        };
+                                    });
+
+	                            </pre>
                             </div>
                         </div>
                     </div>
-
 
                 </div>
                 <div class="modal-footer"><button class="btn btn-primary btn-sm clearbtn" type="button" data-dismiss="modal">Close</button></div>
@@ -550,8 +587,9 @@
                             <div class="row padN">
                                 <button class="btn btn-primary btn-sm" id="ftrclick">Submit</button>
                                 <button class="btn btn-secondary btn-sm clearbtn">Clear</button>
+                                <button class="btn btn-success btn-sm clearbtn" id="ftrtglOn">Show Code</button>
                             </div>
-                            <div class="row-lg">
+                            <div class="row-lg" id="ftrcode">
                                 <pre class="brush: js">
                                                             $("#ftrclick").click(function () {
 
@@ -642,8 +680,9 @@
                             <div class="row padN">
                                 <button class="btn btn-primary btn-sm" id="5btnclick">Submit</button>
                                 <button class="btn btn-secondary btn-sm clearbtn">Clear</button>
+                                <button class="btn btn-success btn-sm clearbtn" id="5tglOn">Show Code</button>
                             </div>
-                            <div class="row-lg">
+                            <div class="row-lg" id="5code">
                                 <pre class="brush: js">
                                                             $("#5btnclick").click(function () {
                                                                 var num1 = Number($("#5input1").val());
@@ -741,8 +780,9 @@
                             <div class="row padN">
                                 <button class="btn btn-primary btn-sm" id="btnclick">Submit</button>
                                 <button class="btn btn-secondary btn-sm clearbtn">Clear</button>
+                                <button class="btn btn-success btn-sm clearbtn" id="sumtglOn">Show Code</button>
                             </div>
-                            <div class="row-lg">
+                            <div class="row-lg" id="sumcode">
                                 <pre class="brush: js">
                                                         $("#btnclick").click(function () {
                                                             var num1 = Number($("#input1").val());
@@ -1074,6 +1114,18 @@
                 return false;
             }
         });
+
+                $("#sumcode").hide();
+        $("#sumtglOn").click(function () {
+            $("#sumcode").toggle();
+
+            if ($(this).text() == "Show Code") {
+                $(this).text("Hide Code");
+            }
+            else {
+                $(this).text("Show Code")
+            };
+        });
     </script>
 
 
@@ -1120,6 +1172,18 @@
                 return false;
             }
         });
+
+                $("#5code").hide();
+        $("#5tglOn").click(function () {
+            $("#5code").toggle();
+
+            if ($(this).text() == "Show Code") {
+                $(this).text("Hide Code");
+            }
+            else {
+                $(this).text("Show Code")
+            };
+        });
     </script>
 
 
@@ -1151,36 +1215,56 @@
                 return false;
             }
         });
+
+        $("#ftrcode").hide();
+        $("#ftrtglOn").click(function () {
+            $("#ftrcode").toggle();
+
+            if ($(this).text() == "Show Code") {
+                $(this).text("Hide Code");
+            }
+            else {
+                $(this).text("Show Code")
+            };
+        });
     </script>
 
     <!--Script for Palindrome-->
+
+
     <script>
         $("#palclick").click(function () {
-
             var pldm = $("#palinput").val();
-            var len = pldm.length();
-            var rev = str.split("").reverse("").join("");
+            var len = pldm.length - 1;
+            var rev = "";
             for (i = len; i >= 0; i--) {
                 rev += pldm[i];
             }
             if (pldm == rev) {
-                $("#palresults").text(pldm + "is a palindrome.");
+                $("#palresults").text(pldm + " is a palindrome.");
             }
             else {
-                $("#palresults").text(pldm + "is NOT a palindrome.");
+                $("#palresults").text(pldm + " is NOT a palindrome.");
             }
-
         });
-
-
         $(".clearbtn").click(function () {
             $("#palresults").empty();
             $("#palinput").val("");
-
         });
 
+        $("#palcode").hide();
+        $("#paltglOn").click(function () {
+            $("#palcode").toggle();
 
+            if ($(this).text() == "Show Code") {
+                $(this).text("Hide Code");
+            }
+            else {
+                $(this).text("Show Code")
+            };
+        });
     </script>
+
 
 
     <!--Fizz Buzz-->
