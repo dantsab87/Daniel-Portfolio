@@ -34,6 +34,7 @@
     <link href="Content/default.css" rel="stylesheet" />-->
     <!--my css code-->
     <link href="Content/img.css" rel="stylesheet" />
+    <link href="Content/arrow.css" rel="stylesheet" />
     <style>
         p#subtitle {
             text-transform: uppercase;
@@ -96,10 +97,14 @@
         }
 
         .my {
-            margin: 10px 0px 30px 0px;
+            margin: 40px 0px 30px 0px;
         }
-
-
+        .pj{
+            color: #000;
+        }
+        .icon-color {
+            color: #add0f7;
+        }
     </style>
 
 </head>
@@ -111,13 +116,13 @@
         <div class="row">
             <div class="container">
 
-                <!-- <div class="logo">
+                <!--<div class="logo">
                     <a href="index.html"><img src="images/logo.png" alt="logo"></a>
                 </div>-->
 
-                <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
+                <div class="responsive"><i data-icon="m" class="ion-navicon-round icon-color"></i></div>
 
-                <ul class="nav-menu list-unstyled">
+                <ul class="nav-menu list-unstyled"">
                     <li><a href="#header" class="smoothScroll shad">Home</a></li>
                     <li><a href="#about" class="smoothScroll shad">About</a></li>
                     <li><a href="#resume" class="smoothScroll shad">Resume</a></li>
@@ -137,15 +142,10 @@
             <div class="header-content">
                 <h1 id="HName">Daniel Chang</h1>
                 <p id="subtitle">.NET DEVELOPER // BIOLOGIST // OUTDOORSMAN</p>
-
-                <!--<ul class="list-unstyled list-social">
-                    <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                    <li><a href="#"><i class="ion-social-instagram"></i></a></li>
-                    <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-                    <li><a href="#"><i class="ion-social-tumblr"></i></a></li>
-                    <li><a href="#"><i class="ion-social-dribbble"></i></a></li>
-                </ul>-->
+                <div class="scroll-down">
+                    <a href="#about"><i class="arrow fa-long-arrow-down"></i></a>
+                </div>
+                <!--<div class="arrow"><a href="#about"></a></div>-->
             </div>
         </div>
     </div>
@@ -244,6 +244,17 @@
                     </p>
                 </div>
 
+                <div class="services-block">
+
+                    <i class="ion-ios-folder-outline"></i>
+                    <span>2007-2009</span>
+                    <span>UNC Charlotte</span>
+                    <span class="s2">Computer Assistant II</span>
+                    <p class="separator">
+                        Provided routine updates and maintenance for the university’s website.
+                    </p>
+                </div>
+
 
             </div>
 
@@ -267,16 +278,32 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="journal-info">
 
-                            <a href="https://dchangblog.azurewebsites.net"><img src="images/blog1.jpg" class="img-responsive" alt="img"></a>
+                            <a href="https://dchangblog.azurewebsites.net"><img src="images/blog1.jpg" class="img-responsive imgborder" alt="img"></a>
 
                             <div class="journal-txt">
-
-                                <h4><a href="https://dchangblog.azurewebsites.net">MY BLOG</a></h4>
-                                <p class="separator">
-                                    Created a blog during week 2 at CoderFoundry
+                                <h4><a href="https://dchangblog.azurewebsites.net">Blog</a></h4>
+                                <p class="separator pj">
+                                    Week 2 Project
                                 </p>
 
                             </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="journal-info">
+                                <a href="https://dchangbugtracker.azurewebsites.net/">
+                                    <img src="images/bugtracker.jpg" class="img-responsive imgborder" alt="img">
+                                </a>
+
+                                <div class="journal-txt">
+                                    <h4><a href="https://dchangbugtracker.azurewebsites.net/">Bug Tracker</a></h4>
+                                    <p class="separator pj">
+                                        Week 4 Project
+                                    </p>
+
+                                </div>
 
                         </div>
                     </div>
@@ -309,7 +336,7 @@
                                 <div class="col-md-4 col-12">
                                     <figure class="hover-box bg-imghov text-white">
                                         <img src="Images/img6.jpg" class="w-100 img-thumbnail pimg" data-toggle="modal" data-target="#myModal6">
-                                        <figcaption class="text-right" data-toggle="modal" data-target="#myModal6">
+                                        <figcaption class="" data-toggle="modal" data-target="#myModal6">
                                             <h3 class="bg-text p-1 mb-1">FizzBuzz</h3>
                                             <h4>Coding Challenge</h4>
                                         </figcaption>
@@ -319,7 +346,7 @@
                                 <div class="col-md-4 col-12">
                                     <figure class="hover-box bg-imghov text-white">
                                         <img src="Images/img2.jpg" class="w-100 img-thumbnail pimg" data-toggle="modal" data-target="#myModal5">
-                                        <figcaption class="text-right" data-toggle="modal" data-target="#myModal5">
+                                        <figcaption class="" data-toggle="modal" data-target="#myModal5">
                                             <h3 class="bg-text p-1 mb-1">Palindrome</h3>
                                             <h4>Coding Challenge</h4>
                                         </figcaption>
@@ -329,7 +356,7 @@
                                 <div class="col-md-4 col-12">
                                     <figure class="hover-box bg-imghov text-white">
                                         <img src="Images/img3.jpg" class="w-100 img-thumbnail pimg" data-toggle="modal" data-target="#myModal4">
-                                        <figcaption class="text-right" data-toggle="modal" data-target="#myModal4">
+                                        <figcaption class="" data-toggle="modal" data-target="#myModal4">
                                             <h3 class="bg-text p-1 mb-1">Factorial</h3>
                                             <h4>Coding Challenge</h4>
                                         </figcaption>
@@ -341,7 +368,7 @@
                                 <div class="col-md-4 col-12">
                                     <figure class="hover-box bg-imghov text-white">
                                         <img src="Images/img4.jpg" class="w-100 img-thumbnail pimg" data-toggle="modal" data-target="#myModal3">
-                                        <figcaption class="text-right" data-toggle="modal" data-target="#myModal3">
+                                        <figcaption class="" data-toggle="modal" data-target="#myModal3">
                                             <h3 class="bg-text p-1 mb-1">The 5 Numbers</h3>
                                             <h4>Coding Challenge</h4>
                                         </figcaption>
@@ -351,7 +378,7 @@
                                 <div class="col-md-4 col-12">
                                     <figure class="hover-box bg-imghov text-white">
                                         <img src="Images/img5.jpg" class="w-100 img-thumbnail pimg" data-toggle="modal" data-target="#myModal2">
-                                        <figcaption class="text-right" data-toggle="modal" data-target="#myModal2">
+                                        <figcaption class="" data-toggle="modal" data-target="#myModal2">
                                             <h3 class="bg-text p-1 mb-1">The Sum of Numbers</h3>
                                             <h4>Coding Challenge</h4>
                                         </figcaption>
@@ -361,7 +388,7 @@
                                 <div class="col-md-4 col-12">
                                     <figure class="hover-box bg-imghov text-white">
                                         <img src="Images/img1.jpg" class="w-100 img-thumbnail pimg" data-toggle="modal" data-target="#myModal">
-                                        <figcaption class="text-right" data-toggle="modal" data-target="#myModal">
+                                        <figcaption class="" data-toggle="modal" data-target="#myModal">
                                             <h3 class="bg-text p-1 mb-1">Bootstrap Grid</h3>
                                             <h4>Coding Challenge</h4>
                                         </figcaption>

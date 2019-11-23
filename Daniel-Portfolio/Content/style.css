@@ -199,18 +199,19 @@ nav {
     background: #eaeffa;
     z-index: 1000;
     width: 100%;
-    padding: 20px;
+    padding: 12px;
     display: none;
-    -webkit-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
-    -moz-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
-    box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
+    -webkit-box-shadow: 0px 12px 42px 0px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 0px 12px 42px 0px rgba(0, 0, 0, 0.18);
+    box-shadow: 0px 12px 42px 0px rgba(0, 0, 0, 0.18);
 }
 
 .nav-menu {
-    float: right;
+    float: left;
     line-height: 32px;
     margin-bottom: 0;
     padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 nav ul li {
@@ -236,12 +237,14 @@ nav ul li a {
 }
 
 .logo {
-  float: left;
+    float: left;
+    margin-left: 100px;
 }
 
 .logo img {
-  width: 100px;
+  width: 90px;
   height: 50px;
+
 }
 
 .responsive {
@@ -315,7 +318,8 @@ nav ul li a {
     #about .div-img-bg {
         padding-bottom: 0px;
         border: 15px solid #b3d7ff;
-        border-radius: 0%;
+        border-radius: .15rem;
+        box-shadow: 6px 7px 15px 0px #999999;
     }
 
     #about .div-img-bg .about-img img {

@@ -96,11 +96,33 @@
 
 .bg-imghov {
     background: linear-gradient(0deg, #305882, transparent);
+    border-radius: .25rem
 }
 
     .bg-text {
-        background-color: #305882 !important
+        background-color: #305882 !important;
+
     }
     .bg-text {
         text-align: left;
     }
+
+.imgborder {
+    border-radius: .25rem;
+    padding: .25rem;
+    background-color: #eaeffa;
+    border-style: solid;
+    border-color: #dee2e6;
+    border-width: 1px;
+    box-shadow: 6px 7px 7px 0px #9bafc5;
+}
+
+
+a:hover img.imgborder {
+    border-style: solid;
+    border-color: #dee2e6;
+    background-color: #FFFFFF;
+    border-width: 1px;
+    -webkit-transition: all .3s ease-in-out;
+    box-shadow: 8px 9px 7px 0px #70849a;
+}

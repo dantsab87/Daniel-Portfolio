@@ -21,7 +21,7 @@
 @media (min-width: 768px) and (max-width: 991px) {
   /* Navbar */
   nav {
-    padding: 10px 15px;
+    padding: 20px 15px;
   }
   .nav-menu {
     margin-top: 40px;
@@ -33,14 +33,14 @@
     float: none;
     width: 100%;
     text-align: center;
-    border-top: 1px solid #f7f7f7;
+    border-top: 1px solid #eaeffa;
     line-height: 45px;
     margin-left: 0;
     padding-top: 10px;
     padding-bottom: 10px;
   }
   .responsive {
-    float: right;
+    float: left;
     padding-top: 15px;
     display: block;
   }
@@ -104,14 +104,14 @@
     float: none;
     width: 100%;
     text-align: center;
-    border-top: 1px solid #f7f7f7;
+    border-top: 1px solid #eaeffa;
     line-height: 45px;
     margin-left: 0;
     padding-top: 10px;
     padding-bottom: 10px;
   }
   .responsive {
-    float: right;
+    float: left;
     padding-top: 15px;
     display: block;
   }
@@ -175,14 +175,14 @@
     float: none;
     width: 100%;
     text-align: center;
-    border-top: 1px solid #f7f7f7;
+    border-top: 1px solid #eaeffa;
     line-height: 45px;
     margin-left: 0;
     padding-top: 10px;
     padding-bottom: 10px;
   }
   .responsive {
-    float: right;
+    float: left;
     padding-top: 15px;
     display: block;
   }
@@ -246,14 +246,14 @@
     float: none;
     width: 100%;
     text-align: center;
-    border-top: 1px solid #f7f7f7;
+    border-top: 1px solid #eaeffa;
     line-height: 45px;
     margin-left: 0;
     padding-top: 10px;
     padding-bottom: 10px;
   }
   .responsive {
-    float: right;
+    float: left;
     padding-top: 15px;
     display: block;
   }
@@ -316,14 +316,14 @@
     float: none;
     width: 100%;
     text-align: center;
-    border-top: 1px solid #f7f7f7;
+    border-top: 1px solid #eaeffa;
     line-height: 45px;
     margin-left: 0;
     padding-top: 10px;
     padding-bottom: 10px;
   }
   .responsive {
-    float: right;
+    float: left;
     padding-top: 15px;
     display: block;
   }

@@ -54,7 +54,7 @@ $(document).ready(function() {
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     if (scroll > 1 ) {
-      $("#main-nav, #main-nav-subpage").slideDown(700);
+        $("#main-nav, #main-nav-subpage").slideDown(700);
       $("#main-nav-subpage").removeClass('subpage-nav');
     } else {
       $("#main-nav").slideUp(700);
