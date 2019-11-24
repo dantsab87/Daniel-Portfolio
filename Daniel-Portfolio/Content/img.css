@@ -21,7 +21,7 @@
         opacity: 0;
     }
 
-    .hover-box:before {
+    /*.hover-box:before {
         width: 0;
         height: 1px;
     }
@@ -29,7 +29,7 @@
     .hover-box:after {
         height: 0;
         width: 1px;
-    }
+    }*/
 
     .hover-box figcaption {
         position: absolute;

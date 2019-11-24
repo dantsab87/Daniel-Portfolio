@@ -575,8 +575,7 @@ nav ul li a {
 /*-----------------------------------------------------------------------------------*/
 
 #contact {
-    background-image: linear-gradient(rgb(255, 255, 255), rgba(236, 242, 249, 1));
-    height: auto;
+    background-image: url('../Images/home_bg2.jpg');
     width: 100%;
 }
 
