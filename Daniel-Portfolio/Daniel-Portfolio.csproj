@@ -89,7 +89,6 @@
     <Content Include="Images\blog-post-3.jpg" />
     <Content Include="Images\blog1.jpg" />
     <Content Include="Images\bugtracker.jpg" />
-    <Content Include="Images\dlogo.png" />
     <Content Include="Images\favicon.png" />
     <Content Include="Images\home_bg.jpg" />
     <Content Include="Images\home_bg3.jpg" />
@@ -104,6 +103,7 @@
     <Content Include="Images\me.jpg" />
     <Content Include="index.html" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\custom.js" />
     <Content Include="Scripts\isotope.pkgd.min.js" />
     <Content Include="Scripts\jquery-migrate.min.js" />
     <Content Include="Scripts\jquery.min.js" />
@@ -111,6 +111,7 @@
     <Content Include="Scripts\main.js" />
     <Content Include="Scripts\modernizr.custom.js" />
     <Content Include="Scripts\owl.carousel.min.js" />
+    <Content Include="Scripts\smtp.js" />
     <Content Include="Scripts\SyntaxHighlighter\scripts\shAutoloader.js" />
     <Content Include="Scripts\SyntaxHighlighter\scripts\shBrushAppleScript.js" />
     <Content Include="Scripts\SyntaxHighlighter\scripts\shBrushAS3.js" />
