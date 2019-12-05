@@ -83,14 +83,11 @@
     <Content Include="Images\1_html5.png" />
     <Content Include="Images\1_jq.png" />
     <Content Include="Images\1_js.png" />
-    <Content Include="Images\6.jpg" />
     <Content Include="Images\about.jpg" />
-    <Content Include="Images\blog-post-2.jpg" />
-    <Content Include="Images\blog-post-3.jpg" />
     <Content Include="Images\blog1.jpg" />
     <Content Include="Images\bugtracker.jpg" />
     <Content Include="Images\favicon.png" />
-    <Content Include="Images\home_bg.jpg" />
+    <Content Include="Images\git.png" />
     <Content Include="Images\home_bg3.jpg" />
     <Content Include="Images\home_bg2.jpg" />
     <Content Include="Images\img1.jpg" />
@@ -99,8 +96,8 @@
     <Content Include="Images\img4.jpg" />
     <Content Include="Images\img5.jpg" />
     <Content Include="Images\img6.jpg" />
+    <Content Include="Images\linkedIn.png" />
     <Content Include="Images\logo.png" />
-    <Content Include="Images\me.jpg" />
     <Content Include="index.html" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\contactform.js" />

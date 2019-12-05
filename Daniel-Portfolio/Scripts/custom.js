@@ -8,12 +8,17 @@
                 To: 'dantsab87@gmail.com',
                 From: $("#email").val(),
                 Subject: $("#subject").val(),
-                Body: "From " + $("#name").val() + ": " + $("#msg").val()
+                Body: "From " + $("#name").val() + ": <BR> <BR> " + "Message:" + $("#msg").val()
             }).then(
                 swal("Email Sent!", "", "success")
+            ).then(
+                $("#email").val(""),
+                $("#subject").val(""),
+                $("#msg").val(""),
+                $("#name").val("")
             );
         }
         else {
-            swal("Woops!", "Please fill in the form!", "error");
+            swal("Uh Oh!", "Please fill in the form!", "error");
         }
     });
