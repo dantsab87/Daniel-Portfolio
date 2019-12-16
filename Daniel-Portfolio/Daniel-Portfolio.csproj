@@ -86,6 +86,7 @@
     <Content Include="Images\about.jpg" />
     <Content Include="Images\blog1.jpg" />
     <Content Include="Images\bugtracker.jpg" />
+    <Content Include="Images\dc_portal.jpg" />
     <Content Include="Images\favicon.png" />
     <Content Include="Images\git.png" />
     <Content Include="Images\home_bg3.jpg" />

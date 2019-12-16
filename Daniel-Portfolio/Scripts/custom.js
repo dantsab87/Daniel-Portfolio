@@ -15,10 +15,12 @@
                 $("#email").val(""),
                 $("#subject").val(""),
                 $("#msg").val(""),
-                $("#name").val("")
+                $("#name").val(""),
+
             );
         }
         else {
             swal("Uh Oh!", "Please fill in the form!", "error");
         }
     });
+
