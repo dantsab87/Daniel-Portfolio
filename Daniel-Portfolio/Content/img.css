@@ -115,8 +115,12 @@
     border-color: #dee2e6;
     border-width: 1px;
     box-shadow: 6px 7px 7px 0px #9bafc5;
+    transition: transform .9s;
 }
 
+a:hover .grayhover {
+    -webkit-filter: grayscale(60%)
+}
 
 a:hover img.imgborder {
     border-style: solid;
@@ -125,4 +129,6 @@ a:hover img.imgborder {
     border-width: 1px;
     -webkit-transition: all .3s ease-in-out;
     box-shadow: 8px 9px 7px 0px #70849a;
+    transform: scale(1.01);
+
 }

@@ -141,6 +141,23 @@
             transform: scale(1.2);
 
         }
+
+        .modal_pic {
+            width:100px;
+            height:100px;
+            position: relative;
+            z-index: auto !important;
+            top: -200px;
+            left: 30px;
+            z-index: 50 !important;
+
+        }
+
+        .modal_headerbg {
+            background-color: #808caa;
+            background-image: linear-gradient(145deg, #add0f7, #2170db);
+
+        }
     </style>
     
 </head>
@@ -326,12 +343,12 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="journal-info">
 
-                                <a href="https://dchangblog.azurewebsites.net"><img src="Images/blog1.jpg" class="img-responsive imgborder" alt="img"></a>
+                                <a href="https://dchangblog.azurewebsites.net"><img src="Images/blog1.jpg" class="img-responsive imgborder grayhover" alt="img"></a>
 
                                 <div class="journal-txt">
                                     <h4><a href="https://dchangblog.azurewebsites.net">Blog</a></h4>
                                     <p class="separator pj">
-                                        Week 2 Project
+                                        My personal blog built with C# MVC and SQL database.
                                     </p>
 
                                 </div>
@@ -342,13 +359,13 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="journal-info">
                                 <a href="https://dchangbugtracker.azurewebsites.net/">
-                                    <img src="Images/bugtracker.jpg" class="img-responsive imgborder" alt="img">
+                                    <img src="Images/bugtracker.jpg" class="img-responsive imgborder grayhover" alt="img">
                                 </a>
 
                                 <div class="journal-txt">
                                     <h4><a href="https://dchangbugtracker.azurewebsites.net/">Bug Tracker</a></h4>
                                     <p class="separator pj">
-                                        Week 4 Project
+                                        A system built with C# MVC and SQL database, to allow submission of tickets for bugs. 
                                     </p>
 
                                 </div>
@@ -362,7 +379,7 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="journal-info">
                                 <a href="#">
-                                    <img src="Images/dc_portal.jpg" class="img-responsive imgborder" alt="img">
+                                    <img src="Images/dc_portal.jpg" class="img-responsive imgborder grayhover" alt="img">
                                 </a>
 
                                 <div class="journal-txt">
@@ -384,7 +401,7 @@
         </div>
     </div>
     <!-- End section projects -->
-    <!-- start section challanges-->
+    <!-- start section challenges-->
     <div id="challenges" class="text-left paddsection">
         <div class="container">
             <div class="tri_project container-fluid"></div>
@@ -486,7 +503,7 @@
         <div class="modal fade" id="myModal6">
             <div class="modal-dialog modal-xl modal-dialog-centered">
                 <div class="modal-content">
-                    <div class="modal-header">
+                    <div class="modal-header modal_headerbg">
                         <h2 class="modal-title">Coding Exercise - FizzBuzz</h2>
                         <button class="close" type="button" data-dismiss="modal">
                             <span class="font-weight-light">&times;</span>
@@ -583,7 +600,7 @@
         <div class="modal fade" id="myModal5">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
-                    <div class="modal-header">
+                    <div class="modal-header modal_headerbg">
                         <h2 class="modal-title">Coding Exercise - Palindrome</h2>
                         <button class="close" type="button" data-dismiss="modal">
                             <span class="font-weight-light">&times;</span>
@@ -660,7 +677,7 @@
         <div class="modal fade" id="myModal4">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
-                    <div class="modal-header">
+                    <div class="modal-header modal_headerbg">
                         <h2 class="modal-title">Coding Exercise - Factorial</h2>
                         <button class="close" type="button" data-dismiss="modal">
                             <span class="font-weight-light">&times;</span>
@@ -732,7 +749,7 @@
         <div class="modal fade" id="myModal3">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
-                    <div class="modal-header">
+                    <div class="modal-header modal_headerbg">
                         <h2 class="modal-title">Coding Exercise - the 5s</h2>
                         <button class="close" type="button" data-dismiss="modal">
                             <span class="font-weight-light">&times;</span>
@@ -840,7 +857,7 @@
         <div class="modal fade" id="myModal2">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
-                    <div class="modal-header">
+                    <div class="modal-header modal_headerbg">
                         <h2 class="modal-title">Coding Exercise - The Sum</h2>
                         <button class="close" type="button" data-dismiss="modal">
                             <span class="font-weight-light">&times;</span>
@@ -927,8 +944,9 @@
         <!--Start of Modal img1 - Bootstrap Grid-->
         <div class="modal fade" id="myModal">
             <div class="modal-dialog modal-xl modal-dialog-centered">
+                <!--<img src="https://dchangbugtracker.azurewebsites.net/Images/bug.png" class="modal_pic">-->
                 <div class="modal-content">
-                    <div class="modal-header">
+                    <div class="modal-header modal_headerbg">
                         <h2 class="modal-title">Coding Exercise - Bootstrap Grid</h2>
                         <button class="close" type="button" data-dismiss="modal">
                             <span class="font-weight-light" aria-hidden="true">&times;</span>
